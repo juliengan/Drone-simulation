@@ -1,9 +1,9 @@
-PeaceLand Project 
+# PeaceLand Project 
 
-Situation 
+## Situation 
  
 
-Client 
+### Client 
  
 
 Peaceland is a blessed country, led by an affable and clear-sighted ruler. He takes great pride in its effort to bring peace, happiness, and harmony to all its citizens.To do so, they heavily rely on their peacemakers. A governmental agency dedicated to make peace around the country. To reach their ambition, they bring assistance to any agitated person and help them to recover peace. More generally they help citizen to stay in line with their country harmonious goal. To help its peacemakers squads, Peaceland engineers have created a working autonomous drone called peacewatcher. They need you to create the program that will receive and manage 
@@ -13,7 +13,7 @@ peacewatchers’s data. This program must:
 - enable peacemaker officers to perform analysis on peacewatcher data 
  
 
-Drone description 
+### Drone description 
 Each peacewatcher sends a report every minute. 
 One report contains 
 ● peacewatcher id 
@@ -23,7 +23,7 @@ computed «peacescore»
 ● words heard by the peacewatcher in its surrounding 
  
 
-Alert 
+### Alert 
 
  
 When a citizen peacescore is bad, your program must trigger an alert with the location of the peacewatcher and the name of the agitated citizen. 
@@ -33,7 +33,7 @@ happiness following the ideas of the beneveland leader of Peaceland. Or they wil
 This alert must be triggered as quickly as possible because an agitated citizen may spread its lack of peace to other citizens. Thus, the peacemaker reaction must be as fast as possible. 
 
  
-Statistics 
+### Statistics 
 Peacemakers are convinced that we need to keep every peacewatcher report in 
 order to make statistics and improve their Peaceland harmony. But they still don’t know what kind of question/statistic they will want to address. 
 Peaceland engineer estimate that when the first wave of peacewatcher will be 
@@ -41,15 +41,15 @@ operational the sum of all their daily report will weight 200Gb
 They also estimate that less than 1% of peacewatcher report contains alert. 
  
 
-Failed attempt 
+### Failed attempt 
 To create a POC of the program, Peaceland hired a team of data-scientists and despite all their efforts, this team have not been able to set up a scalable program that can handle the load. 
 
  
 
-Preliminary questions 
+## Preliminary questions 
  
 
-1) What technical/business constraints should the data storage component of the program architecture meet to fulfill the requirement described by the customer in paragraph «Statistics» ? So what kind of component(s) (listed in the lecture) will the architecture need? 
+#### 1) What technical/business constraints should the data storage component of the program architecture meet to fulfill the requirement described by the customer in paragraph «Statistics» ? So what kind of component(s) (listed in the lecture) will the architecture need? 
  
 
 The data storage component should be resilient : fault tolerance (need to keep every peacewatcher report) is required (we mustn’t lose any data). Concerning the program architecture, 200Gb will be daily stored from the peacewatcher. However, we know one machine can bear at most 10GB. In 5 days, the threshold will be reached, making Big Data essential in this use case. 
@@ -58,25 +58,24 @@ The data storage component should be resilient : fault tolerance (need to keep e
 
  
 
-2) What business constraint should the architecture meet to fulfill the requirement ? 
-Describe in the paragraph «Alert»? Which component to choose? 
+#### 2) What business constraint should the architecture meet to fulfill the requirement ?
+#### Describe in the paragraph «Alert»? Which component to choose? 
 
  
  
 
-3) What mistake(s) from Peaceland can explain the failed attempt ? 
+#### 3) What mistake(s) from Peaceland can explain the failed attempt ? 
 
 Peaceland require a real-time computation of the data retrieved. Besides, the amount is high (if big data framework was taken, it wasn’t Spark). 
 
  
-4) Peaceland has likely forgotten some technical information in the report sent by the drone. In the future, this information could help Peaceland make its peacewatchers 
-much more efficient. Which information ? 
+#### 4) Peaceland has likely forgotten some technical information in the report sent by the drone. In the future, this information could help Peaceland make its peacewatchers much more efficient. Which information ? 
 
  
 
  
 
-Project 
+## Project 
 
  
 Peaceland understands this is beyond their team limits, it can not put in place a programm to deal with the drone’s data. Peaceland asks you for advice to design an architecture allowing them to create a product they could sell to different police forces. 
