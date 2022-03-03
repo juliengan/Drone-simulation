@@ -16,11 +16,11 @@ peacewatchers’s data. This program must:
 ### Drone description 
 Each peacewatcher sends a report every minute. 
 One report contains 
-● peacewatcher id 
-● peacewatcher current location (latitude, longitude) 
+● peacewatcher id   
+● peacewatcher current location (latitude, longitude)   
 ● name of surrounding citizen (identify with facial recognition) with their 
-computed «peacescore» 
-● words heard by the peacewatcher in its surrounding 
+computed «peacescore»   
+● words heard by the peacewatcher in its surrounding   
  
 
 ### Alert 
@@ -69,8 +69,7 @@ The architecture will need distributed software :
   - datalake : data remains forever 
  
 
-#### 2) What business constraint should the architecture meet to fulfill the requirement ?
-#### Describe in the paragraph «Alert»? Which component to choose? 
+#### 2) What business constraint should the architecture meet to fulfill the requirement ? describe in the paragraph «Alert»? Which component to choose? 
 
  
  
@@ -99,7 +98,7 @@ Also the team of the POC was composed only by data scientists when data engineer
  
 Peaceland understands this is beyond their team limits, it can not put in place a programm to deal with the drone’s data. Peaceland asks you for advice to design an architecture allowing them to create a product they could sell to different police forces. 
 It's up to you to report and recommend the right architecture. 
-Based on the preliminary questions, your solution is very likely to include : 
-● at least one distributed storage 
-● at least one distributed stream 
-● at least two stream consumer 
+Based on the preliminary questions, your solution is very likely to include :   
+● at least one distributed storage   
+● at least one distributed stream   
+● at least two stream consumer   
