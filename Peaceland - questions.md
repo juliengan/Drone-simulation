@@ -84,11 +84,11 @@ The architecture will need distributed software :
 
  
 #### 4) Peaceland has likely forgotten some technical information in the report sent by the drone. In the future, this information could help Peaceland make its peacewatchers much more efficient. Which information ? 
--The location of the incident for every citizen, so that the drone can be able to prevent if a given citizen is in a place where he was used to cause incidents 
--a concentration of citizens with bad peacescore 
--the current and live location of citizens with the worst peacescore 
--establish area of tension ( areas where we notice the most incidents)
--the date of the incident
+-The location of the incident for every citizen, so that the drone can be able to prevent if a given citizen is in a place where he was used to cause incidents   
+-a concentration of citizens with bad peacescore   
+-the current and live location of citizens with the worst peacescore   
+-establish area of tension ( areas where we notice the most incidents)  
+-the date of the incident  
 
 ## Project 
 
