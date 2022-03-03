@@ -55,7 +55,7 @@ To create a POC of the program, Peaceland hired a team of data-scientists and de
 The data storage component should :
 
 - be resilient : fault tolerance (need to keep every peacewatcher report) is required (we mustn’t lose any data). Hence a RDD (resilient distributed dataset) is really convenient in our case
-- Concerning the program architecture, 200Gb will be daily stored from the peacewatcher. However, we know one machine can bear at most 10GB. In 5 days, the threshold will be reached, making Big Data essential in this use case. Horizontal scaling : we make our computation in distributed to increase the throughput. 
+- Concerning the program architecture, 200Gb will be daily stored from the peacewatcher. However, we know one machine can bear at most 1TB (on the machine's disk). In 5 days, the threshold will be reached, making Big Data essential in this use case, using several machines. Horizontal scaling : we make our computation in distributed to increase the throughput. 
 - allow to process the citizen incoming data quickly and make statistics, which makes the dataframe also a relevant choice, providing fast processing (faster than RDD thanks to catalyst optimizer) and aggregation allowing statistics on incoming data. 
 
 We use Spark which is the most efficient distributed framework
