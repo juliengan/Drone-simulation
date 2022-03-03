@@ -52,10 +52,21 @@ To create a POC of the program, Peaceland hired a team of data-scientists and de
 #### 1) What technical/business constraints should the data storage component of the program architecture meet to fulfill the requirement described by the customer in paragraph «Statistics» ? So what kind of component(s) (listed in the lecture) will the architecture need? 
  
 
-The data storage component should be resilient : fault tolerance (need to keep every peacewatcher report) is required (we mustn’t lose any data). Concerning the program architecture, 200Gb will be daily stored from the peacewatcher. However, we know one machine can bear at most 10GB. In 5 days, the threshold will be reached, making Big Data essential in this use case. 
+The data storage component should :
 
- 
+- be resilient : fault tolerance (need to keep every peacewatcher report) is required (we mustn’t lose any data). Hence a RDD (resilient distributed dataset) is really convenient in our case
+- Concerning the program architecture, 200Gb will be daily stored from the peacewatcher. However, we know one machine can bear at most 10GB. In 5 days, the threshold will be reached, making Big Data essential in this use case. Horizontal scaling : we make our computation in distributed to increase the throughput. 
+- allow to process the citizen incoming data quickly and make statistics, which makes the dataframe also a relevant choice, providing fast processing (faster than RDD thanks to catalyst optimizer) and aggregation allowing statistics on incoming data. 
 
+We use Spark which is the most efficient distributed framework
+
+The architecture will need distributed software :
+- Streaming
+- Processing : stream processing is more convenient than batch since the amount is not important (1,4MB/minute) and we need to make analytics piece-by-piece as the data is coming almost real-time processing.
+- Storage : NoSQL like MongoDB and datalake like HDFS
+  - graph databases could be a good fit since the peacemakers want to analyse the behovior of the surrounding from a particular citizen
+  - column-oriented database is also a good choice since each citizen are defined by specific attibutes : id (name, surname), location (gps), name of the surrounding and the words heard from the latter.
+  - datalake : data remains forever 
  
 
 #### 2) What business constraint should the architecture meet to fulfill the requirement ?
@@ -66,7 +77,10 @@ The data storage component should be resilient : fault tolerance (need to keep e
 
 #### 3) What mistake(s) from Peaceland can explain the failed attempt ? 
 
-Peaceland require a real-time computation of the data retrieved. Besides, the amount is high (if big data framework was taken, it wasn’t Spark). 
+- Peaceland require a real-time computation of the data retrieved. Besides, the amount is high (if big data framework was taken, it wasn’t Spark) but not enough to use batch processing and hence is not the most efficient way to process data.
+- Big data framework taken : here, Spark is the best choice, maybe the team chosed HDFS instead.
+
+
 
  
 #### 4) Peaceland has likely forgotten some technical information in the report sent by the drone. In the future, this information could help Peaceland make its peacewatchers much more efficient. Which information ? 
