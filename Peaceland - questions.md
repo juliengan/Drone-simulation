@@ -69,8 +69,8 @@ The architecture will need distributed software :
   - datalake : data remains forever 
  
 
-#### 2) What business constraint should the architecture meet to fulfill the requirement ? describe in the paragraph «Alert»? Which component to choose? 
-
+#### 2) What business constraint should the architecture meet to fulfill the requirement describe in the paragraph «Alert»? Which component to choose? 
+ The requirement described in the alert paragraph meets several business constraints.First of all we have the <b>Time</b> constraint, we need to be able to trigger the alert as quickly as possible because an agitated citizen may spread its lack of peace to other citizens. Thus, the peacemaker reaction must be as fast as possible. Secondly, we have the <b>Cost</b> constraint because due to our high price of physical or cloud storage architecture. Thirdly, we have the <b>Reliability</b> constraint , we need to be able to have an important amount of peace watchers who are ready to intervene in case there's a giant sad pandemic virus for example.
  
  
 
