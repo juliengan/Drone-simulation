@@ -1,0 +1,28 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx4InvertedIndexSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an inverted index[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx0WordcountSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- number of data loaded[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- countWord should count the occurrences of each word[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- filterOnWordcount should keep the words which appear more than 4 times[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx1UserMiningSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should count the number of couple (user, tweets)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- tweetByUserNumber should count the number of tweets by user[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the top ten twitterers[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx3HashTagMiningSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should count the hashtag mentioned on tweets[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should count the number of mention by hashtag[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should define the top10[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx2TweetMiningSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should count the persons mentioned on tweets[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should count the number for each user mention[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should define the top10[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 19 seconds, 829 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 13[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 5, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 13, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 27 s, completed Mar 4, 2022, 3:07:21 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

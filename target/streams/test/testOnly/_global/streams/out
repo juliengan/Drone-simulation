@@ -1,0 +1,74 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(com.tp.spark.core.Ex0WordcountSpec, org.scalatest.tools.Framework$$anon$1@6ffc7627, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(com.tp.spark.core.Ex4InvertedIndexSpec, org.scalatest.tools.Framework$$anon$1@6ffc7627, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(com.tp.spark.core.Ex3HashTagMiningSpec, org.scalatest.tools.Framework$$anon$1@6ffc7627, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(com.tp.spark.core.Ex1UserMiningSpec, org.scalatest.tools.Framework$$anon$1@6ffc7627, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx4InvertedIndexSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should return an inverted index *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex4InvertedIndex$.invertedIndex(Ex4InvertedIndex.scala:34)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex4InvertedIndexSpec.$anonfun$new$1(Ex4InvertedIndexSpec.scala:11)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(com.tp.spark.core.Ex2TweetMiningSpec, org.scalatest.tools.Framework$$anon$1@6ffc7627, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx3HashTagMiningSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should count the hashtag mentioned on tweets *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  2433 was not equal to 5262 (Ex3HashTagMiningSpec.scala:12)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should count the number of mention by hashtag *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMining$.countMentions(Ex3HashTagMining.scala:61)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMiningSpec.$anonfun$new$2(Ex3HashTagMiningSpec.scala:16)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should define the top10 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMining$.top10HashTags(Ex3HashTagMining.scala:68)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMiningSpec.$anonfun$new$3(Ex3HashTagMiningSpec.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx0WordcountSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- number of data loaded[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- countWord should count the occurrences of each word[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- filterOnWordcount should keep the words which appear more than 4 times[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx1UserMiningSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should count the number of couple (user, tweets)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- tweetByUserNumber should count the number of tweets by user[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the top ten twitterers[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx2TweetMiningSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should count the persons mentioned on tweets[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should count the number for each user mention[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should define the top10 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Array((@petbe01,1), (@Matt_Volpe,1), (@oomf,1), (@awghaadnicole,1), (@skeetsonyoface,1), (@MizzKrystleVega,1), (@sherrybossgh,1), (@RadioZincSC,1), (@ARMIrocks,1), (@Twice_Bali,1)) did not contain element (@HIITMANonDECK,100) (Ex2TweetMiningSpec.scala:24)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 8 seconds, 48 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 13[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 5, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 8, failed 5, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m*** 5 TESTS FAILED ***[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.tp.spark.core.Ex1UserMiningSpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.tp.spark.core.Ex0WordcountSpec[0m
+[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
+[0m[[0m[31merror[0m] [0m[0m	com.tp.spark.core.Ex2TweetMiningSpec[0m
+[0m[[0m[31merror[0m] [0m[0m	com.tp.spark.core.Ex3HashTagMiningSpec[0m
+[0m[[0m[31merror[0m] [0m[0m	com.tp.spark.core.Ex4InvertedIndexSpec[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mtestOnly[0m) sbt.TestsFailedException: Tests unsuccessful[0m

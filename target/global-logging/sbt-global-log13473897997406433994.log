@@ -1,0 +1,15 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /home/julie/Desktop/spark-lab-json/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/julie/Desktop/spark-lab-json/src/main/scala/com/tp/spark/core/Ex0WordcountDF.scala:40:18: identifier expected but string literal found.[0m
+[0m[[0m[31merror[0m] [0m[0m    df.filter(df["word"] == "e");[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/julie/Desktop/spark-lab-json/src/main/scala/com/tp/spark/core/Ex0WordcountDF.scala:41:3: ']' expected but '}' found.[0m
+[0m[[0m[31merror[0m] [0m[0m  }[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed Feb 18, 2022, 4:35:29 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

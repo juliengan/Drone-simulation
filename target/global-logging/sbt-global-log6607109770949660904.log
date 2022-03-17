@@ -1,0 +1,11 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /home/julie/Desktop/spark-lab-json/target/scala-2.12/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/julie/Desktop/spark-lab-json/src/main/scala/com/tp/spark/core/Ex0Wordcount.scala:6:35: object ByteExactNumeric in package types cannot be accessed in package org.apache.spark.sql.types[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.types.ByteExactNumeric.mkOrderingOps[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed Feb 18, 2022, 4:38:08 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

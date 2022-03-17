@@ -1,0 +1,411 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx3HashTagMiningSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should count the hashtag mentioned on tweets *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMining$.hashtagMentionedOnTweet(Ex3HashTagMining.scala:47)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMiningSpec.$anonfun$new$1(Ex3HashTagMiningSpec.scala:11)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should count the number of mention by hashtag *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMining$.countMentions(Ex3HashTagMining.scala:55)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMiningSpec.$anonfun$new$2(Ex3HashTagMiningSpec.scala:16)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should define the top10 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMining$.top10HashTags(Ex3HashTagMining.scala:62)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMiningSpec.$anonfun$new$3(Ex3HashTagMiningSpec.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx4InvertedIndexSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should return an inverted index *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex4InvertedIndex$.invertedIndex(Ex4InvertedIndex.scala:34)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex4InvertedIndexSpec.$anonfun$new$1(Ex4InvertedIndexSpec.scala:11)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx2TweetMiningSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should count the persons mentioned on tweets *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 1.0 failed 1 times, most recent failure: Lost task 0.0 in stage 1.0 (TID 2) (10.3.102.216 executor driver): com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was BEGIN_ARRAY at line 1 column 2 path $[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.Gson.fromJson(Gson.java:887)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.Gson.fromJson(Gson.java:852)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.Gson.fromJson(Gson.java:801)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.Gson.fromJson(Gson.java:773)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.tp.spark.utils.TweetUtils$.$anonfun$parseFromJson$1(TweetUtils.scala:18)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:484)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:490)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$12.hasNext(Iterator.scala:511)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.util.Utils$.getIteratorSize(Utils.scala:1866)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.rdd.RDD.$anonfun$count$1(RDD.scala:1253)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.rdd.RDD.$anonfun$count$1$adapted(RDD.scala:1253)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.SparkContext.$anonfun$runJob$5(SparkContext.scala:2236)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.scheduler.Task.run(Task.scala:131)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.base/java.lang.Thread.run(Thread.java:829)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mCaused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was BEGIN_ARRAY at line 1 column 2 path $[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	... 21 more[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mDriver stacktrace:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2258)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2207)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2206)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2206)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1079)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1079)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Option.foreach(Option.scala:407)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Cause: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was BEGIN_ARRAY at line 1 column 2 path $[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:887)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:852)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:801)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:773)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.utils.TweetUtils$.$anonfun$parseFromJson$1(TweetUtils.scala:18)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:484)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:490)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$12.hasNext(Iterator.scala:511)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Cause: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was BEGIN_ARRAY at line 1 column 2 path $[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:887)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:852)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:801)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:773)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.utils.TweetUtils$.$anonfun$parseFromJson$1(TweetUtils.scala:18)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:484)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:490)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should count the number for each user mention *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 8.0 failed 1 times, most recent failure: Lost task 0.0 in stage 8.0 (TID 10) (10.3.102.216 executor driver): com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was BEGIN_ARRAY at line 1 column 2 path $[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.Gson.fromJson(Gson.java:887)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.Gson.fromJson(Gson.java:852)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.Gson.fromJson(Gson.java:801)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.Gson.fromJson(Gson.java:773)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.tp.spark.utils.TweetUtils$.$anonfun$parseFromJson$1(TweetUtils.scala:18)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:484)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:490)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$12.hasNext(Iterator.scala:511)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:458)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.util.collection.ExternalSorter.insertAll(ExternalSorter.scala:192)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:62)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.scheduler.Task.run(Task.scala:131)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.base/java.lang.Thread.run(Thread.java:829)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mCaused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was BEGIN_ARRAY at line 1 column 2 path $[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	... 23 more[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mDriver stacktrace:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2258)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2207)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2206)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2206)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1079)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1079)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Option.foreach(Option.scala:407)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Cause: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was BEGIN_ARRAY at line 1 column 2 path $[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:887)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:852)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:801)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:773)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.utils.TweetUtils$.$anonfun$parseFromJson$1(TweetUtils.scala:18)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:484)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:490)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Cause: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was BEGIN_ARRAY at line 1 column 2 path $[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:887)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:852)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:801)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:773)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.utils.TweetUtils$.$anonfun$parseFromJson$1(TweetUtils.scala:18)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:484)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should define the top10 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex2TweetMining$.top10mentions(Ex2TweetMining.scala:74)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex2TweetMiningSpec.$anonfun$new$3(Ex2TweetMiningSpec.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx1UserMiningSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should count the number of couple (user, tweets) *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 2.0 failed 1 times, most recent failure: Lost task 0.0 in stage 2.0 (TID 4) (10.3.102.216 executor driver): com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was BEGIN_ARRAY at line 1 column 2 path $[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.Gson.fromJson(Gson.java:887)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.Gson.fromJson(Gson.java:852)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.Gson.fromJson(Gson.java:801)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.Gson.fromJson(Gson.java:773)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.tp.spark.utils.TweetUtils$.$anonfun$parseFromJson$1(TweetUtils.scala:18)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:156)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.scheduler.Task.run(Task.scala:131)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.base/java.lang.Thread.run(Thread.java:829)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mCaused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was BEGIN_ARRAY at line 1 column 2 path $[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	... 18 more[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mDriver stacktrace:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2258)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2207)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2206)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2206)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1079)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1079)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Option.foreach(Option.scala:407)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Cause: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was BEGIN_ARRAY at line 1 column 2 path $[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:887)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:852)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:801)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:773)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.utils.TweetUtils$.$anonfun$parseFromJson$1(TweetUtils.scala:18)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:156)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Cause: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was BEGIN_ARRAY at line 1 column 2 path $[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:887)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:852)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:801)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:773)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.utils.TweetUtils$.$anonfun$parseFromJson$1(TweetUtils.scala:18)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:156)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- tweetByUserNumber should count the number of tweets by user *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 6.0 failed 1 times, most recent failure: Lost task 0.0 in stage 6.0 (TID 8) (10.3.102.216 executor driver): com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was BEGIN_ARRAY at line 1 column 2 path $[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.Gson.fromJson(Gson.java:887)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.Gson.fromJson(Gson.java:852)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.Gson.fromJson(Gson.java:801)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.Gson.fromJson(Gson.java:773)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.tp.spark.utils.TweetUtils$.$anonfun$parseFromJson$1(TweetUtils.scala:18)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.util.collection.ExternalSorter.insertAll(ExternalSorter.scala:194)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:62)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.scheduler.Task.run(Task.scala:131)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.base/java.lang.Thread.run(Thread.java:829)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mCaused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was BEGIN_ARRAY at line 1 column 2 path $[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	... 19 more[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mDriver stacktrace:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2258)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2207)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2206)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2206)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1079)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1079)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Option.foreach(Option.scala:407)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Cause: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was BEGIN_ARRAY at line 1 column 2 path $[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:887)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:852)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:801)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:773)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.utils.TweetUtils$.$anonfun$parseFromJson$1(TweetUtils.scala:18)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.util.collection.ExternalSorter.insertAll(ExternalSorter.scala:194)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:62)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Cause: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was BEGIN_ARRAY at line 1 column 2 path $[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:887)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:852)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:801)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:773)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.utils.TweetUtils$.$anonfun$parseFromJson$1(TweetUtils.scala:18)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.util.collection.ExternalSorter.insertAll(ExternalSorter.scala:194)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should return the top ten twitterers *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  org.apache.spark.SparkException: Job aborted due to stage failure: Task 1 in stage 10.0 failed 1 times, most recent failure: Lost task 1.0 in stage 10.0 (TID 15) (10.3.102.216 executor driver): com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 148 path $[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.Gson.assertFullConsumption(Gson.java:863)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.Gson.fromJson(Gson.java:853)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.Gson.fromJson(Gson.java:801)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.Gson.fromJson(Gson.java:773)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.tp.spark.utils.TweetUtils$.$anonfun$parseFromJson$1(TweetUtils.scala:18)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.util.collection.ExternalSorter.insertAll(ExternalSorter.scala:194)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:62)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:99)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:52)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.scheduler.Task.run(Task.scala:131)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:497)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1439)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:500)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at java.base/java.lang.Thread.run(Thread.java:829)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mCaused by: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 148 path $[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1559)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1401)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:542)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.stream.JsonReader.peek(JsonReader.java:425)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	at com.google.gson.Gson.assertFullConsumption(Gson.java:859)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m	... 18 more[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mDriver stacktrace:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2258)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2207)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2206)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2206)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1079)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1079)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Option.foreach(Option.scala:407)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Cause: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 148 path $[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.assertFullConsumption(Gson.java:863)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:853)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:801)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:773)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.utils.TweetUtils$.$anonfun$parseFromJson$1(TweetUtils.scala:18)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.util.collection.ExternalSorter.insertAll(ExternalSorter.scala:194)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:62)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Cause: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 148 path $[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1559)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1401)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:542)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.stream.JsonReader.peek(JsonReader.java:425)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.assertFullConsumption(Gson.java:859)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:853)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:801)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.google.gson.Gson.fromJson(Gson.java:773)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.utils.TweetUtils$.$anonfun$parseFromJson$1(TweetUtils.scala:18)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$10.next(Iterator.scala:459)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx0WordcountSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- number of data loaded[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- countWord should count the occurrences of each word[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- filterOnWordcount should keep the words which appear more than 4 times[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 7 seconds, 951 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 13[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 5, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 3, failed 10, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m*** 10 TESTS FAILED ***[0m[0m
+[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
+[0m[[0m[31merror[0m] [0m[0m	com.tp.spark.core.Ex2TweetMiningSpec[0m
+[0m[[0m[31merror[0m] [0m[0m	com.tp.spark.core.Ex1UserMiningSpec[0m
+[0m[[0m[31merror[0m] [0m[0m	com.tp.spark.core.Ex3HashTagMiningSpec[0m
+[0m[[0m[31merror[0m] [0m[0m	com.tp.spark.core.Ex4InvertedIndexSpec[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 15 s, completed Feb 24, 2022, 4:09:56 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m
