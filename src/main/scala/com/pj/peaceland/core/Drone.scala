@@ -3,12 +3,8 @@ package com.pj.peaceland.core
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkConf
 import org.apache.spark.rdd.RDD
-
-import scala.math.Ordered.orderingToOrdered
-import scala.math.Ordering.Implicits.infixOrderingOps
-
-
-
+import java.util.Properties
+import org.apache.kafka.clients.producer.{KafkaProducer,ProducerRecord}
 /**
  *  Here the goal is to count how much each word appears in a file and make some operation on the result.
  *  We use the mapreduce pattern to do this:
@@ -20,9 +16,6 @@ import scala.math.Ordering.Implicits.infixOrderingOps
  *  - for each key (=word), the values are added and we will obtain the total amount.
  */
 object Drone {
-
-  val pathToFile = "data/message.txt"
-  case class message(emotion:String,behavior:String,date:String)
   /**
    *  Load the data from the text file and return an RDD of words
    */
@@ -30,6 +23,9 @@ object Drone {
     // create spark configuration and spark context: the Spark context is the entry point in Spark.
     // It represents the connexion to Spark and it is the place where you can configure the common properties
     // like the app name, the master url, memories allocation...
+    val pathToFile = "data/message.txt"
+    case class message(emotion:String,behavior:String, pscore:Int, date:String)
+
     val conf = new SparkConf()
                         .setAppName("Drone")
                         .setMaster("local[*]") // here local mode. And * means you will use as much as you have cores.
@@ -42,6 +38,9 @@ object Drone {
     sc.textFile(pathToFile)
       .flatMap(_.split(" "))
   }
+
+
+
 
   /**
    *  Now count how much each word appears!
