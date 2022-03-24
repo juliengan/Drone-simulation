@@ -24,7 +24,19 @@ object Drone {
     // It represents the connexion to Spark and it is the place where you can configure the common properties
     // like the app name, the master url, memories allocation...
     val pathToFile = "data/message.txt"
-    case class message(emotion:String,behavior:String, pscore:Int, date:String)
+
+    case class message(
+      id: String,
+      name: String,
+      lastname: String,
+      emotion:String,
+      behavior:String, 
+      pscore:Int, 
+      date:String,
+      long:Double,
+      lat:Double,
+      words:String
+      )
 
     val conf = new SparkConf()
                         .setAppName("Drone")
