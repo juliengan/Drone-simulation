@@ -1,0 +1,123 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.5.8 (Ubuntu Java 11.0.14)
+[debug]       Load.loadUnit: plugins took 194.867595ms
+[debug]       Load.loadUnit: defsScala took 0.688596ms
+[debug] [Loading] Scanning directory /home/julie/.sbt/1.0/plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/julie/.sbt/1.0/plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 35.937801 ms
+[debug]           Load.resolveProject(global-plugins) took 80.348181ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: /home/julie/.sbt/1.0/plugins, plugins: List(<none>))) took 165.650337ms
+[debug] [Loading] Done in /home/julie/.sbt/1.0/plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 213.038417ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.472366ms
+[debug]     Load.loadUnit(file:/home/julie/.sbt/1.0/plugins/, ...) took 428.50552ms
+[debug]   Load.apply: load took 762.065131ms
+[debug]   Load.apply: resolveProjects took 11.224281ms
+[debug]   Load.apply: finalTransforms took 112.573917ms
+[debug]   Load.apply: config.delegates took 12.744757ms
+[debug]   Load.apply: Def.make(settings)... took 732.359701ms
+[debug]   Load.apply: structureIndex took 181.737585ms
+[debug]   Load.apply: mkStreams took 2.637688ms
+[info] loading global plugins from /home/julie/.sbt/1.0/plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 4322.618963ms
+[debug]           Load.loadUnit: plugins took 23.95426ms
+[debug]           Load.loadUnit: defsScala took 0.006713ms
+[debug] [Loading] Scanning directory /home/julie/Desktop/spark-lab-json (copy)/project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/julie/Desktop/spark-lab-json (copy)/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 3.133386 ms
+[debug]               Load.resolveProject(spark-lab-json-copy--build) took 1.743023ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id spark-lab-json-copy--build, base: /home/julie/Desktop/spark-lab-json (copy)/project, plugins: List(<none>))) took 5.651798ms
+[debug] [Loading] Done in /home/julie/Desktop/spark-lab-json (copy)/project, returning: (spark-lab-json-copy--build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 8.171022ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.015493ms
+[debug]         Load.loadUnit(file:/home/julie/Desktop/spark-lab-json%20(copy)/project/, ...) took 33.078263ms
+[debug]       Load.apply: load took 35.218552ms
+[debug]       Load.apply: resolveProjects took 0.200594ms
+[debug]       Load.apply: finalTransforms took 18.443302ms
+[debug]       Load.apply: config.delegates took 0.651021ms
+[debug]       Load.apply: Def.make(settings)... took 180.267179ms
+[debug]       Load.apply: structureIndex took 54.921901ms
+[debug]       Load.apply: mkStreams took 0.004182ms
+[info] loading project definition from /home/julie/Desktop/spark-lab-json (copy)/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 656.906427ms
+[debug]     Load.loadUnit: defsScala took 0.005603ms
+[debug] [Loading] Scanning directory /home/julie/Desktop/spark-lab-json (copy)
+[debug]       Load.loadUnit: mkEval took 7.362769ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/julie/Desktop/spark-lab-json (copy), returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 2.659163 ms
+[info] loading settings for project spark-lab-json-copy- from build.sbt ...
+[debug]         Load.resolveProject(spark-lab-json-copy-) took 3.723386ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id spark-lab-json-copy-, base: /home/julie/Desktop/spark-lab-json (copy), plugins: List(<none>))) took 7.311007ms
+[debug] [Loading] Done in /home/julie/Desktop/spark-lab-json (copy), returning: (spark-lab-json-copy-)
+[debug]     Load.loadUnit: loadedProjectsRaw took 152.960284ms
+[debug]     Load.loadUnit: cleanEvalClasses took 6.926762ms
+[debug]   Load.loadUnit(file:/home/julie/Desktop/spark-lab-json%20(copy)/, ...) took 818.043959ms
+[debug] Load.apply: load took 820.632494ms
+[debug] Load.apply: resolveProjects took 0.208676ms
+[debug] Load.apply: finalTransforms took 16.451243ms
+[debug] Load.apply: config.delegates took 0.569614ms
+[debug] Load.apply: Def.make(settings)... took 175.550397ms
+[debug] Load.apply: structureIndex took 58.966475ms
+[debug] Load.apply: mkStreams took 0.003824ms
+[info] set current project to SparkProject (in build file:/home/julie/Desktop/spark-lab-json%20(copy)/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(shell, None, None)
+[info] sbt server started at local:///home/julie/.sbt/1.0/server/44e7d63f0174eb8be147/sock
+[debug] Writing bsp connection file
+[info] started sbt server
