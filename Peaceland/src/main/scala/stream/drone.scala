@@ -12,13 +12,14 @@ import io.alphash.faker._
 import play.api.libs.json._
 
 object drone {
-
-    case class Message (id : String, emotion : String, behavior : String, pscore : String, datetime: String, lat : String, lon: String, words : (Citizen, String))
+    case class ReportID(id : Int)
+    case class Report (id : String, emotion : String, behavior : String, pscore : String, datetime: String, lat : String, lon: String, words : (Citizen, String))
     case class Citizen(name: String, score: Double)
+
     private val words = Source.fromFile("src/main/resources/words.txt").getLines.toList
     private val formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss")
     implicit val citizenWrites: OWrites[Citizen] = Json.writes[Citizen]
-    implicit val messageWrites: OWrites[Message] = Json.writes[Message]
+    implicit val messageWrites: OWrites[Report] = Json.writes[Report]
 
     def main(args: Array[String]): Unit = {
         val report = jsonReport(1, pretty=true)
@@ -32,9 +33,7 @@ object drone {
             val randomScore = BigDecimal(Random.nextDouble)
                     .setScale(2, BigDecimal.RoundingMode.HALF_UP)
                     .toDouble
-
             Citizen(randomName, randomScore)
-
     }
 
 
@@ -46,11 +45,10 @@ object drone {
 
     def randomCitizensWords(): (Citizen, String) = {
         val nbCitizen = Random.nextInt(5)
-
         (randomCitizens(nbCitizen), randomWords(nbCitizen * 10))
     }
 
-    def randomReport(id:Integer): Message = {
+    def randomReport(id:Integer): Report = {
         val datetime = this.formatter.format(Calendar.getInstance().getTime())
         val lat = Geolocation().latitute
         val lon = Geolocation().longitude
@@ -59,11 +57,11 @@ object drone {
         val emotion = randomWords(1)
         val pscore = Random.nextInt(20)
 
-        Message(id.toString, emotion, behavior, pscore.toString, datetime, lat.toString, lon.toString, words)
+        Report(id.toString, emotion, behavior, pscore.toString, datetime, lat.toString, lon.toString, words)
     }
-    def parseFromJson(lines:Iterator[String]):Iterator[Message] = {
+    def parseFromJson(lines:Iterator[String]):Iterator[Report] = {
         val gson = new Gson
-        lines.map(line => gson.fromJson(line, classOf[Message]))
+        lines.map(line => gson.fromJson(line, classOf[Report]))
     }
 
     def jsonReport(id: Int, pretty: Boolean = false): String = {

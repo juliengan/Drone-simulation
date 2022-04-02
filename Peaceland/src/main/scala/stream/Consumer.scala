@@ -18,7 +18,7 @@ object Consumer {
     props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092")
     props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, classOf[StringDeserializer])
     props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, classOf[StringDeserializer])
-    props.put("auto.offset.reset", "latest")
+    props.put("auto.offset.reset", "earliest")
     props.put(ConsumerConfig.GROUP_ID_CONFIG, "myconsumeranalytics")
     val consumer = new KafkaConsumer[String, String](props)
     val topics = "__consumer_offsets"

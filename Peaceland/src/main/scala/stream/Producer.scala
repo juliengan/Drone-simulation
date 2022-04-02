@@ -7,6 +7,10 @@ import java.util.Properties
 
 object Producer {
 
+  /**
+   * Producer sends the record, i.e. the citizen report generated in drone.scala
+   * @param args
+   */
   def main(args:Array[String]):Unit= {
     val props: Properties = new Properties()
     props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
@@ -19,7 +23,7 @@ object Producer {
       if (exception != null) {
         exception.printStackTrace()
       } else {
-        println(s"Metadata about the sent record: $recordMetadata")
+        println(s"Metadata about the sent record: $recordMetadata, ${record.value()}" )
       }
     })
     producer.close()
