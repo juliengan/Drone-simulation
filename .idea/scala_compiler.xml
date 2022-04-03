@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="Peaceland Project,Spark Project,data_engineering_ekane_ngan_nzeket_6573,save" />
-  </component>
-</project>
