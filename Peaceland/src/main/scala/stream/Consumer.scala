@@ -21,12 +21,10 @@ object Consumer {
     props.put("auto.offset.reset", "earliest")
     props.put(ConsumerConfig.GROUP_ID_CONFIG, "myconsumeranalytics")
     val consumer = new KafkaConsumer[String, String](props)
-    val topics = "__consumer_offsets"
+    val topics = "topic-0"
     try{
       consumer.subscribe(util.Arrays.asList(topics))
       consume(consumer)
-
-
     }catch {
       case e : Exception => e.printStackTrace()
     }finally{

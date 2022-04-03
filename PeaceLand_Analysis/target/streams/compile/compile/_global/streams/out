@@ -1,12 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0m/mnt/d/OneDrive - Efrei/Bureau/ECOLE/DataEngineering/spark-lab-json-Peace/src/main/scala/com/tp/spark/core/KafkaProducerApp.scala:14:65: not found: type ProducerCallback[0m
-[0m[[0m[31merror[0m] [0m[0m    val producer = new KafkaProducer[String, String](props, new ProducerCallback)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                ^[0m
-[0m[[0m[31merror[0m] [0m[0m/mnt/d/OneDrive - Efrei/Bureau/ECOLE/DataEngineering/spark-lab-json-Peace/src/main/scala/com/tp/spark/core/KafkaProducerApp.scala:14:20: overloaded method constructor KafkaProducer with alternatives:[0m
-[0m[[0m[31merror[0m] [0m[0m  (x$1: java.util.Properties,x$2: org.apache.kafka.common.serialization.Serializer[String],x$3: org.apache.kafka.common.serialization.Serializer[String])org.apache.kafka.clients.producer.KafkaProducer[String,String] <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (x$1: java.util.Properties)org.apache.kafka.clients.producer.KafkaProducer[String,String] <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (x$1: java.util.Map[String,Object],x$2: org.apache.kafka.common.serialization.Serializer[String],x$3: org.apache.kafka.common.serialization.Serializer[String])org.apache.kafka.clients.producer.KafkaProducer[String,String] <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (x$1: java.util.Map[String,Object])org.apache.kafka.clients.producer.KafkaProducer[String,String][0m
-[0m[[0m[31merror[0m] [0m[0m cannot be applied to (java.util.Properties, <error>)[0m
-[0m[[0m[31merror[0m] [0m[0m    val producer = new KafkaProducer[String, String](props, new ProducerCallback)[0m
-[0m[[0m[31merror[0m] [0m[0m                   ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[0mdebug[0m] [0m[0mAcquiring lock on file /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Analysis1/project/target/.sbt-compilation-infos/peaceland_analysis1-compile/.sbt-idea-lock ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mReleasing lock on file /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Analysis1/project/target/.sbt-compilation-infos/peaceland_analysis1-compile/.sbt-idea-lock.[0m

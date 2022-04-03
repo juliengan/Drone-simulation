@@ -20,3 +20,4 @@
 1648850705926:run
 1648850724651:compile
 1648850748028:run
+1649004648132:;set _root_.scala.collection.Seq(historyPath := None,shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/tmp/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/snap/intellij-idea-educational/45/plugins/Scala/repo/org/jetbrains/scala/sbt-structure-extractor_2.12_1.0/2021.3.0/sbt-structure-extractor-2021.3.0.jar" org.jetbrains.sbt.CreateTasks;preferScala2;*/*:dumpStructure

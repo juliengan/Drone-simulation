@@ -2,18 +2,12 @@ package stream
 
 import org.apache.avro.generic.GenericRecord
 import org.apache.kafka.common.serialization.{Serde, Serdes}
+import org.apache.kafka.streams.kstream.KStream
+import org.apache.kafka.streams.{KafkaStreams, StreamsBuilder, StreamsConfig, Topology}
 import org.apache.spark.sql.SparkSession
-import org.apache.spark.SparkContext
-import org.apache.spark.SparkConf
-import org.apache.spark.sql._
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.streaming._
-import org.codehaus.jackson.JsonParser.NumberType
-
-import java.sql.Struct
-import scala.compat.java8.FunctionConverters.enrichAsJavaFunction
-
 
 object citizenReportsStream {
 
@@ -25,7 +19,7 @@ object citizenReportsStream {
 
         // Creates spark session using hdfs cluster
         val spark = SparkSession
-          .builder
+          .builder()
           .appName("Peaceland")
           .master("local[*]")
           .getOrCreate()
@@ -35,24 +29,16 @@ object citizenReportsStream {
         import spark.implicits._
 
         // Spark reads the stream of citizenReport the producer sent
-        val data = spark
+        val df = spark
           .readStream
-          .format("org.apache.spark.sql.kafka010.KafkaSourceProvider")
+          .format("kafka")
           .option("kafka.bootstrap.servers", "localhost:9092")
-          .option("subscribe", "topic-0")
+          .option("subscribe", "__consumer_offsets")
           .option("startingOffsets", "earliest")
           .option("failOnDataLoss", false)
           .load()
 
-        data.printSchema()
-
-        // Extracts stream as a dataframe
-        val dataDF = data.selectExpr("CAST(value AS STRING)")
-
-        // Creates a schema for citizen information
-        val subschema = new StructType()
-          .add("name", StringType)
-          .add("score", StringType)
+        df.printSchema()
 
         // Creates a schema for citizenReport
         val schema = new StructType()
@@ -64,23 +50,35 @@ object citizenReportsStream {
           .add("lat", StringType)
           .add("lon", StringType)
           .add("words", ArrayType(StringType))
+        // Extracts stream as a dataframe
+        val report = df.selectExpr("CAST(value AS STRING)")
+          .select(from_json($"value", schema).as("report"))
+          .select("report.*")
+
+        // Creates a schema for citizen information
+        val subschema = new StructType()
+          .add("name", StringType)
+          .add("score", StringType)
 
 
-        val towrite = dataDF.select(from_json($"value", schema).as("report"))
-        val flat = towrite.select($"report.id", $"report.emotion", $"report.behavior", $"report.pscore", $"report.datetime", $"report.lat", $"report.lon", $"report.words".cast("string"))
 
         // Saves the stream as crc files we analyse
-        flat
+        report
           .writeStream
-          .format("kafka")
-          .option("format", "append")
-          .trigger(Trigger.ProcessingTime("25 seconds"))
-          .option("sep", ",")
-          .option("checkpointLocation", "resources/delete")
-          .option("path", "resources/citizenReport/csv")
+          .format("console")
           .outputMode("append")
+          .trigger(Trigger.ProcessingTime("25 seconds"))
           .start()
           .awaitTermination();
+
+        df.selectExpr("CAST(id AS STRING) AS key", "to_json(struct(*)) AS value")
+          .writeStream
+          .format("kafka")
+          .outputMode("append")
+          .option("kafka.bootstrap.servers", "localhost:9092")
+          .option("topic", "__consumer_offsets_data")
+          .start()
+          .awaitTermination()
     }
 
 

@@ -17,5 +17,6 @@ libraryDependencies ++= Seq(
   "com.google.code.gson" % "gson" % "2.7",
   "org.scalatest" %% "scalatest" % "3.0.8",
   "org.apache.kafka" % "kafka-clients" % "2.7.0",
+  "org.apache.kafka" %% "kafka-streams-scala" % "2.0.1",
   "ch.qos.logback" % "logback-classic" % "1.2.3"
 )

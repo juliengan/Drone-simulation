@@ -93,6 +93,7 @@
     <orderEntry type="library" name="sbt: javax.activation:activation:1.1.1:jar" level="project" />
     <orderEntry type="library" name="sbt: javax.inject:javax.inject:1:jar" level="project" />
     <orderEntry type="library" name="sbt: javax.servlet.jsp:jsp-api:2.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: javax.ws.rs:javax.ws.rs-api:2.1:jar" level="project" />
     <orderEntry type="library" name="sbt: javax.xml.bind:jaxb-api:2.2.11:jar" level="project" />
     <orderEntry type="library" name="sbt: joda-time:joda-time:2.10.1:jar" level="project" />
     <orderEntry type="library" name="sbt: log4j:log4j:1.2.17:jar" level="project" />
@@ -135,8 +136,12 @@
     <orderEntry type="library" name="sbt: org.apache.httpcomponents:httpclient:4.5.2:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.httpcomponents:httpcore:4.4.4:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.ivy:ivy:2.4.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.kafka:connect-api:2.0.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.kafka:connect-json:2.0.1:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.kafka:kafka-clients:2.7.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.kafka:kafka-raft:2.7.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.kafka:kafka-streams-scala_2.12:2.0.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.kafka:kafka-streams:2.0.1:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.kafka:kafka_2.12:2.7.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.kerby:kerb-admin:1.0.1:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.kerby:kerb-client:1.0.1:jar" level="project" />
@@ -212,6 +217,7 @@
     <orderEntry type="library" name="sbt: org.plotly-scala:plotly-render_2.12:0.8.2:jar" level="project" />
     <orderEntry type="library" name="sbt: org.roaringbitmap:RoaringBitmap:0.9.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.roaringbitmap:shims:0.9.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.rocksdb:rocksdbjni:5.7.3:jar" level="project" />
     <orderEntry type="library" name="sbt: org.scala-lang.modules:scala-collection-compat_2.12:2.2.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.scala-lang.modules:scala-java8-compat_2.12:0.9.1:jar" level="project" />
     <orderEntry type="library" name="sbt: org.scala-lang.modules:scala-parser-combinators_2.12:1.1.2:jar" level="project" />

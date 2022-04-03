@@ -1,0 +1,123 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.5.8 (Ubuntu Java 11.0.14.1)
+[debug]       Load.loadUnit: plugins took 268.639096ms
+[debug]       Load.loadUnit: defsScala took 0.61135ms
+[debug] [Loading] Scanning directory /home/julie/.sbt/1.0/plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/julie/.sbt/1.0/plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 29.981181 ms
+[debug]           Load.resolveProject(global-plugins) took 139.0876ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: /home/julie/.sbt/1.0/plugins, plugins: List(<none>))) took 208.827118ms
+[debug] [Loading] Done in /home/julie/.sbt/1.0/plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 246.380761ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.552753ms
+[debug]     Load.loadUnit(file:/home/julie/.sbt/1.0/plugins/, ...) took 534.68599ms
+[debug]   Load.apply: load took 1152.317275ms
+[debug]   Load.apply: resolveProjects took 16.28032ms
+[debug]   Load.apply: finalTransforms took 164.566688ms
+[debug]   Load.apply: config.delegates took 70.548562ms
+[debug]   Load.apply: Def.make(settings)... took 1477.401503ms
+[debug]   Load.apply: structureIndex took 385.642143ms
+[debug]   Load.apply: mkStreams took 8.438022ms
+[info] loading global plugins from /home/julie/.sbt/1.0/plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 153739.839921ms
+[debug]           Load.loadUnit: plugins took 178.357361ms
+[debug]           Load.loadUnit: defsScala took 0.016467ms
+[debug] [Loading] Scanning directory /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/Peaceland/project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/Peaceland/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 8.047496 ms
+[debug]               Load.resolveProject(peaceland-build) took 7.331719ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id peaceland-build, base: /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/Peaceland/project, plugins: List(<none>))) took 17.269279ms
+[debug] [Loading] Done in /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/Peaceland/project, returning: (peaceland-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 46.959473ms
+[debug]           Load.loadUnit: cleanEvalClasses took 1.257275ms
+[debug]         Load.loadUnit(file:/home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/Peaceland/project/, ...) took 233.562576ms
+[debug]       Load.apply: load took 258.739989ms
+[debug]       Load.apply: resolveProjects took 0.280736ms
+[debug]       Load.apply: finalTransforms took 36.619303ms
+[debug]       Load.apply: config.delegates took 0.769816ms
+[debug]       Load.apply: Def.make(settings)... took 309.861406ms
+[debug]       Load.apply: structureIndex took 80.566933ms
+[debug]       Load.apply: mkStreams took 0.005228ms
+[info] loading project definition from /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/Peaceland/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 134276.723257ms
+[debug]     Load.loadUnit: defsScala took 0.014363ms
+[debug] [Loading] Scanning directory /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/Peaceland
+[debug]       Load.loadUnit: mkEval took 141.208377ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/Peaceland, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 12.94921 ms
+[info] loading settings for project peaceland from build.sbt ...
+[debug]         Load.resolveProject(peaceland) took 3.539123ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id peaceland, base: /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/Peaceland, plugins: List(<none>))) took 22.308079ms
+[debug] [Loading] Done in /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/Peaceland, returning: (peaceland)
+[debug]     Load.loadUnit: loadedProjectsRaw took 45044.806555ms
+[debug]     Load.loadUnit: cleanEvalClasses took 20.406849ms
+[debug]   Load.loadUnit(file:/home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/Peaceland/, ...) took 179356.280992ms
+[debug] Load.apply: load took 179387.578574ms
+[debug] Load.apply: resolveProjects took 0.144094ms
+[debug] Load.apply: finalTransforms took 14.215622ms
+[debug] Load.apply: config.delegates took 0.403727ms
+[debug] Load.apply: Def.make(settings)... took 868.104594ms
+[debug] Load.apply: structureIndex took 88.182065ms
+[debug] Load.apply: mkStreams took 0.00425ms
+[info] set current project to Peaceland (in build file:/home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/Peaceland/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(shell, None, None)
+[info] sbt server started at local:///home/julie/.sbt/1.0/server/10d0d9458eb6c91b204d/sock
+[debug] Writing bsp connection file
+[info] started sbt server

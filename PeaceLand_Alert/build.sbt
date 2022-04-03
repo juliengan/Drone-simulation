@@ -1,4 +1,4 @@
-name := "PeaceLand_Stream"
+name := "PeaceLand_Alert"
 
 version := "1.0"
 

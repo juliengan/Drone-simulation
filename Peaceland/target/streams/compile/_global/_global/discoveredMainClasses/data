@@ -1,1 +1,1 @@
-["com.peaceland.core.KafkaProducerApp"]
+["analysis.analysis","stream.Consumer","stream.Producer","stream.citizenReportsStream","stream.drone"]
