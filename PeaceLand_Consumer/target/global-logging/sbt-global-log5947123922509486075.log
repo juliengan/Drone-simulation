@@ -1,0 +1,21 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, Some(d7bbd2f2-8dba-4cb8-8723-9d65d61b6ab9), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to D:\OneDrive - Efrei\Bureau\ECOLE\DataEngineering\spark-lab-json\target\scala-2.12\classes ...[0m
+[0m[[0m[31merror[0m] [0m[0mD:\OneDrive - Efrei\Bureau\ECOLE\DataEngineering\spark-lab-json\src\main\scala\com\tp\spark\core\Ex0WordcountDF.scala:24:3: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
+[0m[[0m[31merror[0m] [0m[0m required: org.apache.spark.sql.DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m    (which expands to)  org.apache.spark.sql.Dataset[org.apache.spark.sql.Row][0m
+[0m[[0m[31merror[0m] [0m[0m  }[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\OneDrive - Efrei\Bureau\ECOLE\DataEngineering\spark-lab-json\src\main\scala\com\tp\spark\core\Ex0WordcountDF.scala:29:35: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
+[0m[[0m[31merror[0m] [0m[0m required: org.apache.spark.sql.DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m    (which expands to)  org.apache.spark.sql.Dataset[org.apache.spark.sql.Row][0m
+[0m[[0m[31merror[0m] [0m[0m  def wordcountDF() : DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed 11 mars 2022 à 14:21:17[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m

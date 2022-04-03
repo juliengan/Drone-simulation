@@ -1,0 +1,15 @@
+2022.03.11 14:33:22 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at d:\OneDrive - Efrei\Bureau\ECOLE\DataEngineering\spark-lab-json\.metals\lsp.trace.json or C:\Users\EKANE\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.03.11 14:33:25 INFO  logging to file D:\OneDrive - Efrei\Bureau\ECOLE\DataEngineering\spark-lab-json\.metals\metals.log
+2022.03.11 14:33:25 INFO  Started: Metals version 0.11.2 in workspace 'D:\OneDrive - Efrei\Bureau\ECOLE\DataEngineering\spark-lab-json' for client Visual Studio Code 1.65.0.
+2022.03.11 14:33:25 INFO  Parse release: 11.0.14
+2022.03.11 14:33:42 INFO  time: initialize in 17s
+2022.03.11 14:33:46 WARN  Build server is not auto-connectable.
+2022.03.11 14:33:53 WARN  no build target for: D:\OneDrive - Efrei\Bureau\ECOLE\DataEngineering\spark-lab-json\src\main\scala\com\tp\spark\core\Ex4InvertedIndex.scala
+2022.03.11 14:33:53 WARN  no build target for: D:\OneDrive - Efrei\Bureau\ECOLE\DataEngineering\spark-lab-json\src\main\scala\com\tp\spark\core\Ex0WordcountDF.scala
+2022.03.11 14:33:53 WARN  no build target for: D:\OneDrive - Efrei\Bureau\ECOLE\DataEngineering\spark-lab-json\src\main\scala\com\tp\spark\core\Ex3HashTagMining.scala
+2022.03.11 14:34:16 INFO  no build target found for D:\OneDrive - Efrei\Bureau\ECOLE\DataEngineering\spark-lab-json\src\main\scala\com\tp\spark\core\Ex4InvertedIndex.scala. Using presentation compiler with project's scala-library version: 3.1.1
+mars 11, 2022 2:34:17 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2022.03.11 14:35:14 WARN  no build target for: D:\OneDrive - Efrei\Bureau\ECOLE\DataEngineering\spark-lab-json\src\main\scala\com\tp\spark\core\Ex4InvertedIndex.scala
+2022.03.11 14:35:14 WARN  no build target for: D:\OneDrive - Efrei\Bureau\ECOLE\DataEngineering\spark-lab-json\src\main\scala\com\tp\spark\core\Ex0WordcountDF.scala
+2022.03.11 14:35:14 WARN  no build target for: D:\OneDrive - Efrei\Bureau\ECOLE\DataEngineering\spark-lab-json\src\main\scala\com\tp\spark\core\Ex3HashTagMining.scala

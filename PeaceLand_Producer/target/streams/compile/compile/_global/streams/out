@@ -1,0 +1,5 @@
+[0m[[0m[31merror[0m] [0m[0m/mnt/d/OneDrive - Efrei/Bureau/ECOLE/DataEngineering/PeaceLand/PeaceLand_Producer/src/main/scala/stream/drone.scala:31:36: not enough arguments for method apply: (firstname: String, lastname: String, age: Int)stream.Person in object Person.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameters firstname, lastname, age.[0m
+[0m[[0m[31merror[0m] [0m[0m            val randomName = Person().name[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

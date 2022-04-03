@@ -1,0 +1,12 @@
+excited
+delighted
+pleased
+content
+relax
+calm
+angry
+afraid
+alarmed
+depressed
+bored
+tired

@@ -1,0 +1,14 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly *Ex1UserMiningSpec, Some(46f9cb8b-20e8-4f2a-bdc7-9e864e13bf79), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to D:\OneDrive - Efrei\Bureau\ECOLE\DataEngineering\spark-lab-json\target\scala-2.12\classes ...[0m
+[0m[[0m[31merror[0m] [0m[0mD:\OneDrive - Efrei\Bureau\ECOLE\DataEngineering\spark-lab-json\src\main\scala\com\tp\spark\core\Ex1UserMining.scala:56:39: missing parameter type for expanded function ((x$4: <error>, x$5) => x$4.$plus(x$5))[0m
+[0m[[0m[31merror[0m] [0m[0m    loadData().map((_,1)).reduceByKey(_ + _)[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\OneDrive - Efrei\Bureau\ECOLE\DataEngineering\spark-lab-json\src\main\scala\com\tp\spark\core\Ex1UserMining.scala:56:43: missing parameter type for expanded function ((x$4: <error>, x$5: <error>) => x$4.$plus(x$5))[0m
+[0m[[0m[31merror[0m] [0m[0m    loadData().map((_,1)).reduceByKey(_ + _)[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed 4 mars 2022 à 14:26:28[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

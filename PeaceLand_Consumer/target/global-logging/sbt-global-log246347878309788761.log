@@ -1,0 +1,310 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, Some(97795c95-d35a-4fd5-a4ed-7c2695b87b28), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 8 Scala sources to D:\OneDrive - Efrei\Bureau\ECOLE\DataEngineering\spark-lab-json\target\scala-2.12\classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mNon-compiled module 'compiler-bridge_2.12' for Scala 2.12.10. Compiling...[0m
+[0m[[0m[0minfo[0m] [0m[0m  Compilation completed in 17.985s.[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to D:\OneDrive - Efrei\Bureau\ECOLE\DataEngineering\spark-lab-json\target\scala-2.12\test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx2TweetMiningSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should count the persons mentioned on tweets *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex2TweetMining$.mentionOnTweet(Ex2TweetMining.scala:51)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex2TweetMiningSpec.$anonfun$new$1(Ex2TweetMiningSpec.scala:11)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should count the number for each user mention *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex2TweetMining$.countMentions(Ex2TweetMining.scala:58)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex2TweetMiningSpec.$anonfun$new$2(Ex2TweetMiningSpec.scala:16)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should define the top10 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex2TweetMining$.top10mentions(Ex2TweetMining.scala:65)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex2TweetMiningSpec.$anonfun$new$3(Ex2TweetMiningSpec.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx0WordcountSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mcom.tp.spark.core.Ex0WordcountSpec *** ABORTED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.NoClassDefFoundError: Could not initialize class org.apache.spark.SparkConf$[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.SparkConf.set(SparkConf.scala:94)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.SparkConf.set(SparkConf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.SparkConf.setAppName(SparkConf.scala:120)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex0Wordcount$.loadData(Ex0Wordcount.scala:29)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex0WordcountSpec.$anonfun$new$1(Ex0WordcountSpec.scala:12)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx3HashTagMiningSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should count the hashtag mentioned on tweets *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMining$.hashtagMentionedOnTweet(Ex3HashTagMining.scala:47)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMiningSpec.$anonfun$new$1(Ex3HashTagMiningSpec.scala:11)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should count the number of mention by hashtag *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMining$.countMentions(Ex3HashTagMining.scala:55)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMiningSpec.$anonfun$new$2(Ex3HashTagMiningSpec.scala:16)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should define the top10 *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMining$.top10HashTags(Ex3HashTagMining.scala:62)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex3HashTagMiningSpec.$anonfun$new$3(Ex3HashTagMiningSpec.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx4InvertedIndexSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mcom.tp.spark.core.Ex4InvertedIndexSpec *** ABORTED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.ExceptionInInitializerError:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.unsafe.array.ByteArrayMethods.<clinit>(ByteArrayMethods.java:54)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.internal.config.package$.<init>(package.scala:1095)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.internal.config.package$.<clinit>(package.scala)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.SparkConf$.<init>(SparkConf.scala:654)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.SparkConf$.<clinit>(SparkConf.scala)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.SparkConf.set(SparkConf.scala:94)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.SparkConf.set(SparkConf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.SparkConf.setAppName(SparkConf.scala:120)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex4InvertedIndex$.invertedIndex(Ex4InvertedIndex.scala:27)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex4InvertedIndexSpec.$anonfun$new$1(Ex4InvertedIndexSpec.scala:11)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Cause: java.lang.reflect.InaccessibleObjectException: Unable to make private java.nio.DirectByteBuffer(long,int) accessible: module java.base does not "opens java.nio" to unnamed module @12fd0c47[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at java.base/java.lang.reflect.Constructor.checkCanSetAccessible(Constructor.java:188)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at java.base/java.lang.reflect.Constructor.setAccessible(Constructor.java:181)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.unsafe.Platform.<clinit>(Platform.java:56)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.unsafe.array.ByteArrayMethods.<clinit>(ByteArrayMethods.java:54)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.internal.config.package$.<init>(package.scala:1095)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.internal.config.package$.<clinit>(package.scala)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.SparkConf$.<init>(SparkConf.scala:654)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.SparkConf$.<clinit>(SparkConf.scala)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx1UserMiningSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should count the number of couple (user, tweets) *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex1UserMining$.tweetsByUser(Ex1UserMining.scala:47)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex1UserMiningSpec.$anonfun$new$1(Ex1UserMiningSpec.scala:11)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- tweetByUserNumber should count the number of tweets by user *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex1UserMining$.tweetByUserNumber(Ex1UserMining.scala:54)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex1UserMiningSpec.$anonfun$new$2(Ex1UserMiningSpec.scala:16)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should return the top ten twitterers *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex1UserMining$.topTenTwitterers(Ex1UserMining.scala:62)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.tp.spark.core.Ex1UserMiningSpec.$anonfun$new$3(Ex1UserMiningSpec.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.ExceptionInInitializerError[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.unsafe.array.ByteArrayMethods.<clinit>(ByteArrayMethods.java:54)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.internal.config.package$.<init>(package.scala:1095)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.internal.config.package$.<clinit>(package.scala)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.SparkConf$.<init>(SparkConf.scala:654)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.SparkConf$.<clinit>(SparkConf.scala)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.SparkConf.set(SparkConf.scala:94)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.SparkConf.set(SparkConf.scala:83)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.SparkConf.setAppName(SparkConf.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.tp.spark.core.Ex4InvertedIndex$.invertedIndex(Ex4InvertedIndex.scala:27)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.tp.spark.core.Ex4InvertedIndexSpec.$anonfun$new$1(Ex4InvertedIndexSpec.scala:11)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.Transformer.apply(Transformer.scala:22)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.Transformer.apply(Transformer.scala:20)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuite.withFixture(FunSuite.scala:1560)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuiteLike.invokeWithFixture$1(FunSuiteLike.scala:184)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuiteLike.$anonfun$runTest$1(FunSuiteLike.scala:196)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:286)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuiteLike.runTest(FunSuiteLike.scala:196)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuiteLike.runTest$(FunSuiteLike.scala:178)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuite.runTest(FunSuite.scala:1560)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuiteLike.$anonfun$runTests$1(FunSuiteLike.scala:229)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:393)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.foreach(List.scala:392)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:376)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:458)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuiteLike.runTests(FunSuiteLike.scala:229)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuiteLike.runTests$(FunSuiteLike.scala:228)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuite.runTests(FunSuite.scala:1560)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.Suite.run(Suite.scala:1124)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.Suite.run$(Suite.scala:1106)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1560)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuiteLike.$anonfun$run$1(FunSuiteLike.scala:233)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.SuperEngine.runImpl(Engine.scala:518)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuiteLike.run(FunSuiteLike.scala:233)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuiteLike.run$(FunSuiteLike.scala:232)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuite.run(FunSuite.scala:1560)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:317)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:510)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestRunner.runTest$1(TestFramework.scala:146)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestRunner.run(TestFramework.scala:161)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:324)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:284)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:324)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:324)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFunction.apply(TestFramework.scala:336)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Tests$.$anonfun$toTask$1(Tests.scala:435)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$3.$anonfun$apply$2(Transform.scala:46)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.work(Execute.scala:291)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:833)[0m
+[0m[[0m[31merror[0m] [0m[0mCaused by: java.lang.reflect.InaccessibleObjectException: Unable to make private java.nio.DirectByteBuffer(long,int) accessible: module java.base does not "opens java.nio" to unnamed module @12fd0c47[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.reflect.Constructor.checkCanSetAccessible(Constructor.java:188)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.reflect.Constructor.setAccessible(Constructor.java:181)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.unsafe.Platform.<clinit>(Platform.java:56)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.unsafe.array.ByteArrayMethods.<clinit>(ByteArrayMethods.java:54)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.internal.config.package$.<init>(package.scala:1095)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.internal.config.package$.<clinit>(package.scala)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.SparkConf$.<init>(SparkConf.scala:654)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.SparkConf$.<clinit>(SparkConf.scala)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.SparkConf.set(SparkConf.scala:94)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.SparkConf.set(SparkConf.scala:83)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.spark.SparkConf.setAppName(SparkConf.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.tp.spark.core.Ex4InvertedIndex$.invertedIndex(Ex4InvertedIndex.scala:27)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.tp.spark.core.Ex4InvertedIndexSpec.$anonfun$new$1(Ex4InvertedIndexSpec.scala:11)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.Transformer.apply(Transformer.scala:22)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.Transformer.apply(Transformer.scala:20)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuite.withFixture(FunSuite.scala:1560)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuiteLike.invokeWithFixture$1(FunSuiteLike.scala:184)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuiteLike.$anonfun$runTest$1(FunSuiteLike.scala:196)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:286)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuiteLike.runTest(FunSuiteLike.scala:196)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuiteLike.runTest$(FunSuiteLike.scala:178)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuite.runTest(FunSuite.scala:1560)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuiteLike.$anonfun$runTests$1(FunSuiteLike.scala:229)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:393)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.foreach(List.scala:392)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:376)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:458)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuiteLike.runTests(FunSuiteLike.scala:229)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuiteLike.runTests$(FunSuiteLike.scala:228)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuite.runTests(FunSuite.scala:1560)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.Suite.run(Suite.scala:1124)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.Suite.run$(Suite.scala:1106)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuite.org$scalatest$FunSuiteLike$$super$run(FunSuite.scala:1560)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuiteLike.$anonfun$run$1(FunSuiteLike.scala:233)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.SuperEngine.runImpl(Engine.scala:518)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuiteLike.run(FunSuiteLike.scala:233)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuiteLike.run$(FunSuiteLike.scala:232)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.FunSuite.run(FunSuite.scala:1560)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:317)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:510)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestRunner.runTest$1(TestFramework.scala:146)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestRunner.run(TestFramework.scala:161)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:324)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:284)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:324)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:324)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFunction.apply(TestFramework.scala:336)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Tests$.$anonfun$toTask$1(Tests.scala:435)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$3.$anonfun$apply$2(Transform.scala:46)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.work(Execute.scala:291)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:833)[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mexecuteTests[0m) java.lang.ExceptionInInitializerError[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 109 s (01:49), completed 3 mars 2022, 08:43:12[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
