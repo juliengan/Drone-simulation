@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="citizen.css">
+  <meta charset="UTF-8">
+  <title>Peaceland Center - Peace Makers</title>
+  <script src="https://cdn.plot.ly/plotly-1.52.2.min.js"></script>
+</head>
+<header>
+    <h2>Peaceland Center - Peace Makers </h2>
+</header>
+<body>
+    <nav>
+      <ul>
+        <li><a href="red_hours.html">Red Hours</a></li>
+        <li><a href="suspiscious_people.html">Most suspiscious citizens</a></li>
+        <li><a href="#">Most suspiscious places</a></li>
+      </ul>
+    </nav>
+<div id="chart"></div>
+<script>
+(function () {
+  var data0 = {"x":[" Ali Erdman"," Sharon Kerluke"," Eugenia Keefe"," Romaine Torp"," Turner Sawayn"],"y":[2.0,2.0,2.0,2.0,2.0],"type":"bar"};
+  var data = [data0];
+  var layout = {"title":"5 most present people during an alert"};
+ var config = {};
+
+  Plotly.plot('chart', data, layout, config);
+})();
+</script>
+</body>
+</html>

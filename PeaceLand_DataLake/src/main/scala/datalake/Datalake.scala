@@ -7,7 +7,8 @@ import org.apache.kafka.streams.{KafkaStreams, StreamsBuilder, StreamsConfig, To
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.functions._
-import org.apache.spark.sql.streaming._port org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord,ProducerConfig}
+import org.apache.spark.sql.streaming.{Trigger}
+import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord,ProducerConfig}
 
 object Datalake {
     

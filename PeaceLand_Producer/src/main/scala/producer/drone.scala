@@ -13,31 +13,16 @@ import play.api.libs.json._
 
 object drone {
 
-    case class Message (id : String, emotion : String, behavior : String, pscore : String, datetime: String, lat : String, lon: String, words : (Citizen, String))
-    case class Citizen(name: String, score: Double)
+    case class Message (id : String, name : String, emotion : String, behavior : String, pscore : String, datetime: String, lat : String, lon: String, words : String)
     private val words = Source.fromFile("src/main/scala/data/words.txt").getLines.toList
     private val emotions_bag = Source.fromFile("src/main/scala/data/emotions.txt").getLines.toList
     private val formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss")
-    implicit val citizenWrites: OWrites[Citizen] = Json.writes[Citizen]
     implicit val messageWrites: OWrites[Message] = Json.writes[Message]
 
     def main(args: Array[String]): Unit = {
         val report = jsonReport(1, pretty=true)
         println(report)
     }
-
-    def randomCitizens(nb: Int): Citizen = nb match {
-        case x if x < 1 => ???
-        case _ =>
-            val randomName = Person().name
-            val randomScore = BigDecimal(Random.nextDouble)
-                    .setScale(2, BigDecimal.RoundingMode.HALF_UP)
-                    .toDouble
-
-            Citizen(randomName, randomScore)
-
-    }
-
 
     // https://users.scala-lang.org/t/two-recursive-calls-one-tail-recursive-one-not/6166/12
     def randomWords(nb: Int): String = nb match {
@@ -50,10 +35,14 @@ object drone {
         case _ => this.emotions_bag(Random.nextInt(this.emotions_bag.length))
     }
 
-    def randomCitizensWords(): (Citizen, String) = {
-        val nbCitizen = Random.nextInt(5)
+    def randomCitizens(nb: Int): String = nb match {
+        case x if x < 1 => ???
+        case _ => Person().name
+    }
 
-        (randomCitizens(nbCitizen), randomWords(nbCitizen * 10))
+    def randomCitizensWords(): String = {
+        val nbCitizen = Random.nextInt(5)
+        randomWords(nbCitizen * 10)
     }
 
     def randomReport(id:Integer): Message = {
@@ -64,8 +53,9 @@ object drone {
         val behavior = randomWords(1)
         val emotion = randomEmotions(1)
         val pscore = Random.nextInt(20)
+        val name = randomCitizens(1)
 
-        Message(id.toString, emotion, behavior, pscore.toString, datetime, lat.toString, lon.toString, words)
+        Message(id.toString, name, emotion, behavior, pscore.toString, datetime, lat.toString, lon.toString, words)
     }
 
     def parseFromJson(lines:Iterator[String]):Iterator[Message] = {

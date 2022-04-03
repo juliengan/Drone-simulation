@@ -1,1 +1,1 @@
-["stream.drone","stream.kafkaProducerApp"]
+["producer.Producer","producer.drone"]

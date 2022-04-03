@@ -1,24 +1,15 @@
 [0m[[0m[31merror[0m] [0m[0mscala.NotImplementedError: an implementation is missing[0m
 [0m[[0m[31merror[0m] [0m[0m	at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)[0m
-[0m[[0m[31merror[0m] [0m[0m	at stream.drone$.randomCitizens(drone.scala:30)[0m
-[0m[[0m[31merror[0m] [0m[0m	at stream.drone$.randomCitizensWords(drone.scala:56)[0m
-[0m[[0m[31merror[0m] [0m[0m	at stream.drone$.randomReport(drone.scala:63)[0m
-[0m[[0m[31merror[0m] [0m[0m	at stream.drone$.jsonReport(drone.scala:81)[0m
-[0m[[0m[31merror[0m] [0m[0m	at stream.kafkaProducerApp$.delayedEndpoint$stream$kafkaProducerApp$1(KafkaProducerApp.scala:37)[0m
-[0m[[0m[31merror[0m] [0m[0m	at stream.kafkaProducerApp$delayedInit$body.apply(KafkaProducerApp.scala:18)[0m
-[0m[[0m[31merror[0m] [0m[0m	at scala.Function0.apply$mcV$sp(Function0.scala:39)[0m
-[0m[[0m[31merror[0m] [0m[0m	at scala.Function0.apply$mcV$sp$(Function0.scala:39)[0m
-[0m[[0m[31merror[0m] [0m[0m	at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:17)[0m
-[0m[[0m[31merror[0m] [0m[0m	at scala.App.$anonfun$main$1$adapted(App.scala:80)[0m
-[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.foreach(List.scala:392)[0m
-[0m[[0m[31merror[0m] [0m[0m	at scala.App.main(App.scala:80)[0m
-[0m[[0m[31merror[0m] [0m[0m	at scala.App.main$(App.scala:78)[0m
-[0m[[0m[31merror[0m] [0m[0m	at stream.kafkaProducerApp$.main(KafkaProducerApp.scala:18)[0m
-[0m[[0m[31merror[0m] [0m[0m	at stream.kafkaProducerApp.main(KafkaProducerApp.scala)[0m
-[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
-[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)[0m
-[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Method.java:498)[0m
+[0m[[0m[31merror[0m] [0m[0m	at producer.drone$.randomWords(drone.scala:29)[0m
+[0m[[0m[31merror[0m] [0m[0m	at producer.drone$.randomCitizensWords(drone.scala:45)[0m
+[0m[[0m[31merror[0m] [0m[0m	at producer.drone$.randomReport(drone.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at producer.drone$.jsonReport(drone.scala:71)[0m
+[0m[[0m[31merror[0m] [0m[0m	at producer.Producer$.main(Producer.scala:45)[0m
+[0m[[0m[31merror[0m] [0m[0m	at producer.Producer.main(Producer.scala)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.reflect.Method.invoke(Method.java:566)[0m
 [0m[[0m[31merror[0m] [0m[0m	at sbt.Run.invokeMain(Run.scala:143)[0m
 [0m[[0m[31merror[0m] [0m[0m	at sbt.Run.execute$1(Run.scala:93)[0m
 [0m[[0m[31merror[0m] [0m[0m	at sbt.Run.$anonfun$runWithLoader$5(Run.scala:120)[0m
@@ -29,7 +20,7 @@
 [0m[[0m[31merror[0m] [0m[0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
 [0m[[0m[31merror[0m] [0m[0m	at scala.util.Try$.apply(Try.scala:213)[0m
 [0m[[0m[31merror[0m] [0m[0m	at sbt.internal.BackgroundThreadPool$BackgroundRunnable.run(DefaultBackgroundJobService.scala:369)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)[0m
-[0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Thread.java:748)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:829)[0m
 [0m[[0m[31merror[0m] [0m[0m(Compile / [31mrun[0m) scala.NotImplementedError: an implementation is missing[0m
