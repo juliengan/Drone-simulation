@@ -13,7 +13,7 @@ import play.api.libs.json._
 
 object drone {
 
-    case class Message (id : String, name : String, emotion : String, behavior : String, pscore : String, datetime: String, lat : String, lon: String, words : String)
+    case class Message (id : String, name : String, age : String, emotion : String, behavior : String, pscore : String, datetime: String, lat : String, lon: String, words : String)
     private val words = Source.fromFile("src/main/scala/data/words.txt").getLines.toList
     private val emotions_bag = Source.fromFile("src/main/scala/data/emotions.txt").getLines.toList
     private val formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss")
@@ -53,9 +53,10 @@ object drone {
         val behavior = randomWords(1)
         val emotion = randomEmotions(1)
         val pscore = Random.nextInt(20)
+        val age = 5 + Random. nextInt(85)
         val name = randomCitizens(1)
 
-        Message(id.toString, name, emotion, behavior, pscore.toString, datetime, lat.toString, lon.toString, words)
+        Message(id.toString, name, age.toString, emotion, behavior, pscore.toString, datetime, lat.toString, lon.toString, words)
     }
 
     def parseFromJson(lines:Iterator[String]):Iterator[Message] = {

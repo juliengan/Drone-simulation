@@ -1,5 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Producer/src/main/scala/producer/drone.scala:57:16: not enough arguments for method apply: (id: String, name: String, emotion: String, behavior: String, pscore: String, datetime: String, lat: String, lon: String, words: String)producer.drone.Message in object Message.[0m
-[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter words.[0m
-[0m[[0m[31merror[0m] [0m[0m        Message(id.toString, emotion, behavior, pscore.toString, datetime, lat.toString, lon.toString, words)[0m
-[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Producer/src/main/scala/producer/drone.scala:20:63: No instance of play.api.libs.json.Writes is available for java.lang.Integer, java.lang.Integer in the implicit scope (Hint: if declared in the same file, make sure it's declared before)[0m
+[0m[[0m[31merror[0m] [0m[0m    implicit val messageWrites: OWrites[Message] = Json.writes[Message][0m
+[0m[[0m[31merror[0m] [0m[0m                                                              ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

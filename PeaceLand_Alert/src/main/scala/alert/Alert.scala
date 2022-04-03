@@ -29,14 +29,12 @@ object Alert {
 
         import spark.implicits._
 
-        // Creates a schema for citizen information
-        val subschema = new StructType()
-          .add("name", StringType)
-          .add("score", StringType)
 
         // Creates a schema for citizenReport
         val schema = new StructType()
           .add("id", StringType)
+          .add("name", StringType)
+          .add("age", StringType)
           .add("emotion", StringType)
           .add("behavior", StringType)
           .add("pscore", IntegerType)
@@ -47,11 +45,12 @@ object Alert {
 
         val threshold = 5
 
-        val df = spark.readStream
+        // citizens with too low peace score (under 5/20)
+        val suspiscious = spark.readStream
           .format("org.apache.spark.sql.kafka010.KafkaSourceProvider")
           .option("kafka.bootstrap.servers", "localhost:9092")
           .option("subscribe", "test")
-          .option("startingOffsets", "latest")
+          .option("startingOffsets", "earliest")
           .option("failOnDataLoss", false)
           .load()
           .selectExpr("CAST(value AS STRING)")
@@ -64,6 +63,26 @@ object Alert {
           .trigger(Trigger.ProcessingTime("25 seconds"))
           .start()
           .awaitTermination()
+
+        // citizens with too low peace score (under 5/20)
+        val angry = spark.readStream
+          .format("org.apache.spark.sql.kafka010.KafkaSourceProvider")
+          .option("kafka.bootstrap.servers", "localhost:9092")
+          .option("subscribe", "test")
+          .option("startingOffsets", "earliest")
+          .option("failOnDataLoss", false)
+          .load()
+          .selectExpr("CAST(value AS STRING)")
+          .select(from_json($"value", schema).as("report"))
+          .select("report.*")
+          .filter($"emotion" === "angry" )
+          .writeStream
+          .format("console")
+          .outputMode("append")
+          .trigger(Trigger.ProcessingTime("25 seconds"))
+          .start()
+          .awaitTermination()
+
 
 
     }

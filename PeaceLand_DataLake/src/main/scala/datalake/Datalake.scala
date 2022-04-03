@@ -43,14 +43,11 @@ object Datalake {
         // Extracts stream as a dataframe
         val dataStringDF = df.selectExpr("CAST(value AS STRING)")
 
-        // Creates a schema for citizen information
-        val subschema = new StructType()
-            .add("name", StringType)
-            .add("score", StringType)
-
         // Creates a schema for citizenReport
         val schema = new StructType()
             .add("id", StringType)
+            .add("name", StringType)
+            .add("age", StringType)
             .add("emotion", StringType)
             .add("behavior", StringType)
             .add("pscore", StringType)
@@ -61,17 +58,18 @@ object Datalake {
 
 
         val reportDF = dataStringDF.select(from_json($"value", schema).as("report"))
-        .select($"report.id", $"report.emotion", $"report.behavior", $"report.pscore", $"report.datetime", $"report.lat", $"report.lon", $"report.words".cast("string"))
+        .select("report.*")
 
         // write stream dataframe to console
-       /* reportDF
+       /*reportDF
           .writeStream
           .format("console")
           .outputMode("append")
           .trigger(Trigger.ProcessingTime("25 seconds"))
           .start()
           .awaitTermination();
-            */
+        */
+
         // write stream dataframe to csv file
         println("\n\n *************************************** \n\n\t Writing to csv file \n\n ***************************************\n\n")
         reportDF
