@@ -1,36 +1,86 @@
 package datalake
 
-import java.util.Properties
-import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord,ProducerConfig}
+import org.apache.avro.generic.GenericRecord
+import org.apache.kafka.common.serialization.{Serde, Serdes}
+import org.apache.kafka.streams.kstream.KStream
+import org.apache.kafka.streams.{KafkaStreams, StreamsBuilder, StreamsConfig, Topology}
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.types._
+import org.apache.spark.sql.functions._
+import org.apache.spark.sql.streaming._port org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord,ProducerConfig}
 
 object Datalake {
+    
+    /**
+     * It streams the citizen report from drone to the analysis job
+     * @param args
+     */
+    def main(args: Array[String]) {
 
-    def main(args: Array[String]): Unit = {
-        // configure the producer properties
-        val props: Properties = new Properties()
-        props.put("bootstrap.servers", "localhost:9092") // address of the broker
-        props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer") // serializer for the key
-        props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer") // serializer for the value
-        props.put("acks", "all") //
+        // Creates spark session using hdfs cluster
+        val spark = SparkSession
+            .builder
+            .appName("Peaceland")
+            .master("local[*]")
+            .getOrCreate()
 
-        // create the producer with the properties and a callback function
-        val producer = new KafkaProducer[String, String](props)
+        spark.sparkContext.setLogLevel("ERROR")
 
-        // Create a message
-        val key: String = "akey"
-        val value: String = "Hello Kafka"
+        import spark.implicits._
 
-        // Create a record
-        val record = new ProducerRecord[String, String]("test", key, value)
+        // Spark reads the stream of citizenReport the producer sent
+        val df = spark
+            .readStream
+            .format("org.apache.spark.sql.kafka010.KafkaSourceProvider")
+            .option("kafka.bootstrap.servers", "localhost:9092")
+            .option("subscribe", "test")
+            .option("startingOffsets", "earliest")
+            .load()
 
-        // send the data
+        df.printSchema()
 
-        producer.send(record)
-        producer.send(record)
-        producer.send(record)
-        producer.send(record)
+        // Extracts stream as a dataframe
+        val dataStringDF = df.selectExpr("CAST(value AS STRING)")
 
-        // close the producer
-        producer.close()
+        // Creates a schema for citizen information
+        val subschema = new StructType()
+            .add("name", StringType)
+            .add("score", StringType)
+
+        // Creates a schema for citizenReport
+        val schema = new StructType()
+            .add("id", StringType)
+            .add("emotion", StringType)
+            .add("behavior", StringType)
+            .add("pscore", StringType)
+            .add("datetime", StringType)
+            .add("lat", StringType)
+            .add("lon", StringType)
+            .add("words", ArrayType(StringType))
+
+
+        val reportDF = dataStringDF.select(from_json($"value", schema).as("report"))
+        .select($"report.id", $"report.emotion", $"report.behavior", $"report.pscore", $"report.datetime", $"report.lat", $"report.lon", $"report.words".cast("string"))
+
+        // write stream dataframe to console
+       /* reportDF
+          .writeStream
+          .format("console")
+          .outputMode("append")
+          .trigger(Trigger.ProcessingTime("25 seconds"))
+          .start()
+          .awaitTermination();
+            */
+        // write stream dataframe to csv file
+        println("\n\n *************************************** \n\n\t Writing to csv file \n\n ***************************************\n\n")
+        reportDF
+          .writeStream
+          .format("csv") // supports parquet, json, orc, csv, text, avro, kafka, mysql, db2, postgresql, cassandra, redshift, dynamodb, mongodb, sql server, hbase, hive, parquet, or dataframe
+          .option("path", "./data/data")
+          .option("checkpointLocation", "./data/checkpoint/")
+          .outputMode("append")
+          .trigger(Trigger.ProcessingTime("25 seconds"))
+          .start()
+          .awaitTermination();
     }
 }

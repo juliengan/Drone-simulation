@@ -62,7 +62,7 @@ object Streamer {
         val reportDF = dataStringDF.select(from_json($"value", schema).as("report"))
         .select($"report.id", $"report.emotion", $"report.behavior", $"report.pscore", $"report.datetime", $"report.lat", $"report.lon", $"report.words".cast("string"))
 
-        // Saves the stream as crc files we analyse
+        // write stream dataframe to console
         reportDF
           .writeStream
           .format("console")
