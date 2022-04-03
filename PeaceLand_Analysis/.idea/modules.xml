@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PeaceLand_Alert.iml" filepath="$PROJECT_DIR$/.idea/modules/PeaceLand_Alert.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PeaceLand_Alert-build.iml" filepath="$PROJECT_DIR$/.idea/modules/PeaceLand_Alert-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PeaceLand_Analysis.iml" filepath="$PROJECT_DIR$/.idea/modules/PeaceLand_Analysis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PeaceLand_Analysis-build.iml" filepath="$PROJECT_DIR$/.idea/modules/PeaceLand_Analysis-build.iml" />
     </modules>
   </component>
 </project>
