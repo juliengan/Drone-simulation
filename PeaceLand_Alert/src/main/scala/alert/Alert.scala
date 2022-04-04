@@ -49,7 +49,7 @@ object Alert {
         val suspiscious = spark.readStream
           .format("org.apache.spark.sql.kafka010.KafkaSourceProvider")
           .option("kafka.bootstrap.servers", "localhost:9092")
-          .option("subscribe", "test")
+          .option("subscribe", "test1")
           .option("startingOffsets", "earliest")
           .option("failOnDataLoss", false)
           .load()
