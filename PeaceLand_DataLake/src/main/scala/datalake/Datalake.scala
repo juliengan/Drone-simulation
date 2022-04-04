@@ -34,7 +34,7 @@ object Datalake {
             .readStream
             .format("org.apache.spark.sql.kafka010.KafkaSourceProvider")
             .option("kafka.bootstrap.servers", "localhost:9092")
-            .option("subscribe", "test")
+            .option("subscribe", "test1")
             .option("startingOffsets", "earliest")
             .load()
 
@@ -45,30 +45,20 @@ object Datalake {
 
         // Creates a schema for citizenReport
         val schema = new StructType()
-            .add("id", StringType)
-            .add("name", StringType)
-            .add("age", StringType)
-            .add("emotion", StringType)
-            .add("behavior", StringType)
-            .add("pscore", StringType)
-            .add("datetime", StringType)
-            .add("lat", StringType)
-            .add("lon", StringType)
-            .add("words", ArrayType(StringType))
+          .add("id", StringType)
+          .add("name", StringType)
+          .add("age", StringType)
+          .add("emotion", StringType)
+          .add("behavior", StringType)
+          .add("pscore", StringType)
+          .add("datetime", StringType)
+          .add("lat", StringType)
+          .add("lon", StringType)
+          .add("words", StringType)
 
 
         val reportDF = dataStringDF.select(from_json($"value", schema).as("report"))
-        .select("report.*")
-
-        // write stream dataframe to console
-       /*reportDF
-          .writeStream
-          .format("console")
-          .outputMode("append")
-          .trigger(Trigger.ProcessingTime("25 seconds"))
-          .start()
-          .awaitTermination();
-        */
+        .select($"report.id",$"report.name",$"report.age", $"report.emotion", $"report.behavior", $"report.pscore", $"report.datetime", $"report.lat", $"report.lon", $"report.words")
 
         // write stream dataframe to csv file
         println("\n\n *************************************** \n\n\t Writing to csv file \n\n ***************************************\n\n")
