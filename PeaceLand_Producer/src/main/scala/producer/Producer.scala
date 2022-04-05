@@ -1,7 +1,7 @@
 package producer
 
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord,ProducerConfig, RecordMetadata}
-
+import scala.util.Random
 
 import java.time.Instant
 import java.net.URI
@@ -10,17 +10,6 @@ import java.util.Properties
 
 object Producer {
   // This producer sends the record to the stream eg : citizen report generated in drone object
-  //testing stuff
-  case class Id[Resource](value: String) extends AnyVal
-
-  case class User(id: Id[User], updatedOn: Instant, image: URI, nickname: String, verified: Boolean, deleted: Boolean)
-
-  case class Post(id: Id[Post], updatedOn: Instant, author: Id[User], text: String, image: URI, deleted: Boolean)
-
-  case class Like(userId: Id[User], postId: Id[Post], updatedOn: Instant, unliked: Boolean)
-
-  case class Comment(id: Id[Comment], postId: Id[Post], updatedOn: Instant, author: Id[User], text: String, deleted: Boolean)
-
 
   /**
    * Producer sends the record, i.e. the citizen report generated in drone.scala
@@ -28,6 +17,7 @@ object Producer {
    * @param args
    */
   def main(args: Array[String]): Unit = {
+    
     // configure the producer properties
     val props: Properties = new Properties()
     props.put("bootstrap.servers", "localhost:9092") // address of the broker
@@ -42,8 +32,8 @@ object Producer {
     val key: String = "akey"
 
     // Create a record
-    val record = new ProducerRecord[String, String]("test", key, drone.jsonReport(10))
-    //val record = new ProducerRecord[String, String]("test", key, "Hello Kafka")
+    val record = new ProducerRecord[String, String]("test1", key, drone.jsonReport(Random.nextInt(100)))
+  
     // send the data
     producer.send(record, (recordMetadata: RecordMetadata, exception: Exception) => {
       if (exception != null) {

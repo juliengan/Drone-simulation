@@ -30,7 +30,7 @@ object Consumer {
         val consumer = new KafkaConsumer[String, String](props)
 
         // topic name
-        val topics = "test"
+        val topics = "test1"
 
         // subscribe to the topic
         consumer.subscribe(util.Arrays.asList(topics))
