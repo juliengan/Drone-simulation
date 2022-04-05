@@ -1,3 +1,6 @@
 [0m[[0m[0minfo[0m] [0m[0mRunning alert.Alert.[0m
 [0m[[0m[0mdebug[0m] [0m[0mwith JSEnv Node.js[0m
 [0m[[0m[0mdebug[0m] [0m[0mStarting process: node[0m
+[0m[[0m[31merror[0m] [0m[0morg.scalajs.jsenv.ExternalJSRun$NonZeroExitException: exited with code 1[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalajs.jsenv.ExternalJSRun$$anon$1.run(ExternalJSRun.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrun[0m) org.scalajs.jsenv.ExternalJSRun$NonZeroExitException: exited with code 1[0m

@@ -6,8 +6,8 @@ import org.apache.spark.sql.functions._
 import org.apache.spark.sql.streaming._
 import plotly.Bar
 import plotly.Plotly.TraceOps
-import scala.scalajs.js.annotation.JSExportTopLevel
 
+import scala.scalajs.js.annotation.JSExportTopLevel
 import plotly.element.{Color, Marker, Orientation}
 import plotly.layout.{BarMode, Layout}
 import org.apache.spark.SparkContext
@@ -20,18 +20,18 @@ import layout._
 import Plotly._
 import cats.Inject
 import org.apache.hadoop.yarn.webapp.view.Html
+import org.scalajs.dom
+import org.scalajs.dom.window
+import org.scalajs.dom.window.{document, window}
 
 import java.io._
 import java.io.File
-import org.scalajs.dom
-import org.scalajs.dom.document
-
 import scala.scalajs.js.annotation.JSExportTopLevel
 
 object Alert {
 
     def appendPar(targetNode: dom.Node, text: String): Unit = {
-        val parNode = document.createElement("p")
+        val parNode = dom.document.createElement("p")
         parNode.textContent = text
         targetNode.appendChild(parNode)
     }
@@ -42,12 +42,25 @@ object Alert {
      * @param args
      */
     def main(args: Array[String]): Unit = {
-        appendPar(document.body, "Hello World")
-    }
+
+            document.addEventListener("DOMContentLoaded", { (e: dom.Event) =>
+            setupUI()
+        })    }
 
     @JSExportTopLevel("addClickedMessage")
     def addClickedMessage(): Unit = {
         appendPar(document.body, "You clicked the button!")
+    }
+
+    def setupUI(): Unit = {
+        val button = document.createElement("button")
+        button.textContent = "Click me!"
+        button.addEventListener("click", { (e: dom.MouseEvent) =>
+            addClickedMessage()
+        })
+        dom.document.body.appendChild(button)
+
+        appendPar(dom.document.body, "Hello World")
     }
 
     def retrieveAlerts(): Unit ={

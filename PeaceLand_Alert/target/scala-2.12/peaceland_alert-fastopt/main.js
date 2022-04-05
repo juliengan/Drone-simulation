@@ -848,10 +848,23 @@ $c_Lalert_Alert$.prototype.appendPar__Lorg_scalajs_dom_Node__T__V = (function(ta
   targetNode.appendChild(parNode)
 });
 $c_Lalert_Alert$.prototype.main__AT__V = (function(args) {
-  this.appendPar__Lorg_scalajs_dom_Node__T__V(document.body, "Hello World")
+  var qual$1 = window.document;
+  var x$2 = ((arg1$2) => {
+    $m_Lalert_Alert$().setupUI__V()
+  });
+  qual$1.addEventListener("DOMContentLoaded", x$2)
 });
 $c_Lalert_Alert$.prototype.addClickedMessage__V = (function() {
-  this.appendPar__Lorg_scalajs_dom_Node__T__V(document.body, "You clicked the button!")
+  this.appendPar__Lorg_scalajs_dom_Node__T__V(window.document.body, "You clicked the button!")
+});
+$c_Lalert_Alert$.prototype.setupUI__V = (function() {
+  var button = window.document.createElement("button");
+  button.textContent = "Click me!";
+  button.addEventListener("click", ((arg1$2) => {
+    $m_Lalert_Alert$().addClickedMessage__V()
+  }));
+  document.body.appendChild(button);
+  this.appendPar__Lorg_scalajs_dom_Node__T__V(document.body, "Hello World")
 });
 var $d_Lalert_Alert$ = new $TypeData().initClass({
   Lalert_Alert$: 0

@@ -1,0 +1,9 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(fastLinkJS, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / fastLinkJS[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Alert/target/scala-2.12/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mFast optimizing /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Alert/target/scala-2.12/peaceland_alert-fastopt[0m
+[0m[[0m[0mdebug[0m] [0m[0mGlobal IR cache stats: reused: 0 -- invalidated: 233 -- trees read: 50[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 4 s, completed Apr 5, 2022, 5:30:48 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

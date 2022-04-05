@@ -5,10 +5,11 @@ version := "1.0"
 scalaVersion := "2.12.10"
 
 val kafkaVer = "2.3.0"
-enablePlugins(ScalaJSPlugin)
 
+enablePlugins(ScalaJSPlugin)
 // This is an application with a main method
 scalaJSUseMainModuleInitializer := true
+
 libraryDependencies ++= Seq(
   "org.scalatest" % "scalatest_2.12" % "3.1.0" % "test",
   "com.github.stevenchen3" %% "scala-faker" % "0.1.1",
