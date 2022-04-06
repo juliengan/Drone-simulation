@@ -15,7 +15,7 @@ peacewatchers’s data. This program must:
 
 ### Drone description 
 Each peacewatcher sends a report every minute. 
-One report contains 
+One report contains  
 ● peacewatcher id   
 ● peacewatcher current location (latitude, longitude)   
 ● name of surrounding citizen (identify with facial recognition) with their 
