@@ -1,0 +1,26 @@
+[0m[[0m[0minfo[0m] [0m[0mFull optimizing /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Analysis/target/scala-2.12/peaceland_analysis-opt[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Compute reachability: 43600 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Assemble LinkedClasses: 1627 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Check IR: 191496 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: 272753 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Batch mode: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Incremental part: 13736 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizing 202 methods.[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizer part: 39618 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: 53948 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Compute reachability: 4917 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Assemble LinkedClasses: 272 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: 25639 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mModule Splitter: Calculate Dependency Info: 128 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mModule Splitter: Analyze Modules: 19 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mModule Splitter: Assemble Modules: 172 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mModule Splitter: 477 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Generate Classes: 43578 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Write trees: 17991 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Class tree cache stats: reused: 0 -- invalidated: 31[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Method tree cache stats: reused: 0 -- invalidated: 91[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: 69054 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mClosure: Create trees): 410574 us[0m
+[0m[[0m[0minfo[0m] [0m[0mClosure: 0 error(s), 0 warning(s)[0m
+[0m[[0m[0mdebug[0m] [0m[0mClosure: Compiler pass: 1737131 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mClosure: Write result: 18887 us[0m

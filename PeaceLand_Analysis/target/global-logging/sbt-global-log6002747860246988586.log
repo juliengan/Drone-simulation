@@ -1,0 +1,40 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(bgRun, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / bgRun[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[31merror[0m] [0m[0mjava.io.FileNotFoundException: /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Analysis/target/bg-jobs/sbt_8b900a32/target/0076cb84/57ac48c5/cats-kernel_2.12-1.5.0.jar (No such file or directory)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.io.FileOutputStream.open0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.Using$.$anonfun$fileOutputChannel$1(Using.scala:104)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.Using$$anon$3.openImpl(Using.scala:86)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.OpenFile.open(Using.scala:53)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.OpenFile.open$(Using.scala:47)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.Using$$anon$3.open(Using.scala:85)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.Using$$anon$3.open(Using.scala:85)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.Using.apply(Using.scala:25)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.IO$.$anonfun$copyFile$3(IO.scala:901)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.IO$.$anonfun$copyFile$3$adapted(IO.scala:900)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.Using.apply(Using.scala:27)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.IO$.copyFile(IO.scala:900)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.IO$.copyFile(IO.scala:885)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.IO$.copyFile(IO.scala:877)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.AbstractBackgroundJobService.syncTo$1(DefaultBackgroundJobService.scala:246)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.AbstractBackgroundJobService.$anonfun$copyClasspath$4(DefaultBackgroundJobService.scala:251)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.map(List.scala:297)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.AbstractBackgroundJobService.copyClasspath(DefaultBackgroundJobService.scala:251)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$bgRunTask$5(Defaults.scala:1976)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.BackgroundThreadPool.start$2(DefaultBackgroundJobService.scala:486)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.BackgroundThreadPool.$anonfun$runWithLoader$1(DefaultBackgroundJobService.scala:491)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.AbstractBackgroundJobService.doRunInBackground(DefaultBackgroundJobService.scala:159)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.BackgroundThreadPool.runWithLoader(DefaultBackgroundJobService.scala:491)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.AbstractBackgroundJobService.runInBackgroundWithLoader(DefaultBackgroundJobService.scala:178)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$bgRunTask$3(Defaults.scala:1973)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.work(Execute.scala:291)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon

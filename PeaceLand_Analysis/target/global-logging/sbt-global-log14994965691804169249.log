@@ -1,0 +1,51 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Analysis/target/scala-2.12/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[31merror[0m] [0m[0mjava.io.IOException: No space left on device[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:68)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:109)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:58)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:850)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:836)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.FileChannelImpl.transferFromFileChannel(FileChannelImpl.java:706)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.FileChannelImpl.transferFrom(FileChannelImpl.java:775)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.IO$.loop$1(IO.scala:907)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.IO$.$anonfun$copyFile$4(IO.scala:910)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.IO$.$anonfun$copyFile$4$adapted(IO.scala:901)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.Using.apply(Using.scala:27)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.IO$.$anonfun$copyFile$3(IO.scala:901)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.IO$.$anonfun$copyFile$3$adapted(IO.scala:900)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.Using.apply(Using.scala:27)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.IO$.copyFile(IO.scala:900)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.IO$.copyFile(IO.scala:885)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.IO$.copyFile(IO.scala:877)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.AbstractBackgroundJobService.syncTo$1(DefaultBackgroundJobService.scala:246)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.AbstractBackgroundJobService.$anonfun$copyClasspath$4(DefaultBackgroundJobService.scala:251)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.map(List.scala:297)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.AbstractBackgroundJobService.copyClasspath(DefaultBackgroundJobService.scala:251)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$bgRunTask$5(Defaults.scala:1976)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.BackgroundThreadPool.start$2(DefaultBackgroundJobService.scala:486)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.BackgroundThreadPool.$anonfun$runWithLoader$1(DefaultBackgroundJobService.scala:491)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.AbstractBackgroundJobService.doRunInBackground(DefaultBackgroundJobService.scala:159)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.BackgroundThreadPool.runWithLoader(DefaultBackgroundJobService.scala:491)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.AbstractBackgroundJobService.runInBackgroundWithLoader(DefaultBackgroundJobService.scala:178)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$bgRunTask$3(Defaults.scala:1973)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandl[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:829)[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mbgRun[0m) java.io.IOException: No space left on device[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 4 s, completed Apr 6, 2022, 10:11:41 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

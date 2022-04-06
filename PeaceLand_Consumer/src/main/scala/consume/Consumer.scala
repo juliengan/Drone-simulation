@@ -21,7 +21,7 @@ object Consumer {
         props.put("bootstrap.servers", "localhost:9092") // broker list
         props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer") // key deserializer
         props.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer") // value deserializer
-        props.put("group.id", "test") // consumer group
+        props.put("group.id", "__consumer_offsets") // consumer group
         props.put("enable.auto.commit", "true") // commit offsets automatically
         props.put("auto.commit.interval.ms", "1000") // commit every second
         props.put("session.timeout.ms", "30000") // timeout to close consumer

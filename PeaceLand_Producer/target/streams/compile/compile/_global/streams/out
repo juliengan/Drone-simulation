@@ -1,4 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0m/home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Producer/src/main/scala/producer/drone.scala:20:63: No instance of play.api.libs.json.Writes is available for java.lang.Integer, java.lang.Integer in the implicit scope (Hint: if declared in the same file, make sure it's declared before)[0m
-[0m[[0m[31merror[0m] [0m[0m    implicit val messageWrites: OWrites[Message] = Json.writes[Message][0m
-[0m[[0m[31merror[0m] [0m[0m                                                              ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[0mdebug[0m] [0m[0mAcquiring lock on file /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Producer/project/target/.sbt-compilation-infos/peaceland_producer-compile/.sbt-idea-lock ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mReleasing lock on file /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Producer/project/target/.sbt-compilation-infos/peaceland_producer-compile/.sbt-idea-lock.[0m

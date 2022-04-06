@@ -35,6 +35,7 @@ object Datalake {
             .format("org.apache.spark.sql.kafka010.KafkaSourceProvider")
             .option("kafka.bootstrap.servers", "localhost:9092")
             .option("subscribe", "test1")
+            .option("failOnDataLoss","false")
             .option("startingOffsets", "earliest")
             .load()
 

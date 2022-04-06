@@ -1,0 +1,153 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Analysis/target/scala-2.12/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mFast optimizing /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Analysis/target/scala-2.12/peaceland_analysis-fastopt[0m
+[0m[[0m[31merror[0m] [0m[0mReferring to non-existent class org.apache.spark.sql.types.StringType$[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.loadData()org.apache.spark.sql.Dataset[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from static analysis.Analysis.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from core module module initializers[0m
+[0m[[0m[31merror[0m] [0m[0minvolving instantiated classes:[0m
+[0m[[0m[31merror[0m] [0m[0m  analysis.Analysis$[0m
+[0m[[0m[31merror[0m] [0m[0mReferring to non-existent class org.apache.spark.sql.types.StructType[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.loadData()org.apache.spark.sql.Dataset[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from static analysis.Analysis.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from core module module initializers[0m
+[0m[[0m[31merror[0m] [0m[0minvolving instantiated classes:[0m
+[0m[[0m[31merror[0m] [0m[0m  analysis.Analysis$[0m
+[0m[[0m[31merror[0m] [0m[0mReferring to non-existent class org.apache.spark.sql.SparkSession$[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.loadData()org.apache.spark.sql.Dataset[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from static analysis.Analysis.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from core module module initializers[0m
+[0m[[0m[31merror[0m] [0m[0minvolving instantiated classes:[0m
+[0m[[0m[31merror[0m] [0m[0m  analysis.Analysis$[0m
+[0m[[0m[31merror[0m] [0m[0mReferring to non-existent class org.apache.spark.sql.Dataset[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.loadData()org.apache.spark.sql.Dataset[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from static analysis.Analysis.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from core module module initializers[0m
+[0m[[0m[31merror[0m] [0m[0minvolving instantiated classes:[0m
+[0m[[0m[31merror[0m] [0m[0m  analysis.Analysis$[0m
+[0m[[0m[31merror[0m] [0m[0mReferring to non-existent class org.apache.spark.sql.SparkSession$[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.loadData()org.apache.spark.sql.Dataset[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from static analysis.Analysis.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from core module module initializers[0m
+[0m[[0m[31merror[0m] [0m[0minvolving instantiated classes:[0m
+[0m[[0m[31merror[0m] [0m[0m  analysis.Analysis$[0m
+[0m[[0m[31merror[0m] [0m[0mReferring to non-existent method org.apache.spark.sql.SparkSession$.builder()org.apache.spark.sql.SparkSession$Builder[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.loadData()org.apache.spark.sql.Dataset[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from static analysis.Analysis.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from core module module initializers[0m
+[0m[[0m[31merror[0m] [0m[0minvolving instantiated classes:[0m
+[0m[[0m[31merror[0m] [0m[0m  analysis.Analysis$[0m
+[0m[[0m[31merror[0m] [0m[0mReferring to non-existent class org.apache.spark.SparkContext[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.loadData()org.apache.spark.sql.Dataset[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from static analysis.Analysis.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from core module module initializers[0m
+[0m[[0m[31merror[0m] [0m[0minvolving instantiated classes:[0m
+[0m[[0m[31merror[0m] [0m[0m  analysis.Analysis$[0m
+[0m[[0m[31merror[0m] [0m[0mReferring to non-existent method org.apache.spark.SparkContext.setLogLevel(java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.loadData()org.apache.spark.sql.Dataset[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from static analysis.Analysis.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from core module module initializers[0m
+[0m[[0m[31merror[0m] [0m[0minvolving instantiated classes:[0m
+[0m[[0m[31merror[0m] [0m[0m  analysis.Analysis$[0m
+[0m[[0m[31merror[0m] [0m[0mReferring to non-existent class org.apache.spark.sql.SQLContext[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.loadData()org.apache.spark.sql.Dataset[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from static analysis.Analysis.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from core module module initializers[0m
+[0m[[0m[31merror[0m] [0m[0minvolving instantiated classes:[0m
+[0m[[0m[31merror[0m] [0m[0m  analysis.Analysis$[0m
+[0m[[0m[31merror[0m] [0m[0mReferring to non-existent method org.apache.spark.sql.SQLContext.read()org.apache.spark.sql.DataFrameReader[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.loadData()org.apache.spark.sql.Dataset[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from static analysis.Analysis.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from core module module initializers[0m
+[0m[[0m[31merror[0m] [0m[0minvolving instantiated classes:[0m
+[0m[[0m[31merror[0m] [0m[0m  analysis.Analysis$[0m
+[0m[[0m[31merror[0m] [0m[0mReferring to non-existent class org.apache.spark.sql.SparkSession$Builder[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.loadData()org.apache.spark.sql.Dataset[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from static analysis.Analysis.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from core module module initializers[0m
+[0m[[0m[31merror[0m] [0m[0minvolving instantiated classes:[0m
+[0m[[0m[31merror[0m] [0m[0m  analysis.Analysis$[0m
+[0m[[0m[31merror[0m] [0m[0mReferring to non-existent method org.apache.spark.sql.SparkSession$Builder.appName(java.lang.String)org.apache.spark.sql.SparkSession$Builder[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.loadData()org.apache.spark.sql.Dataset[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from static analysis.Analysis.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from core module module initializers[0m
+[0m[[0m[31merror[0m] [0m[0minvolving instantiated classes:[0m
+[0m[[0m[31merror[0m] [0m[0m  analysis.Analysis$[0m
+[0m[[0m[31merror[0m] [0m[0mReferring to non-existent method org.apache.spark.sql.SparkSession$Builder.master(java.lang.String)org.apache.spark.sql.SparkSession$Builder[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.loadData()org.apache.spark.sql.Dataset[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from static analysis.Analysis.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from core module module initializers[0m
+[0m[[0m[31merror[0m] [0m[0minvolving instantiated classes:[0m
+[0m[[0m[31merror[0m] [0m[0m  analysis.Analysis$[0m
+[0m[[0m[31merror[0m] [0m[0mReferring to non-existent method org.apache.spark.sql.SparkSession$Builder.getOrCreate()org.apache.spark.sql.SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.loadData()org.apache.spark.sql.Dataset[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from static analysis.Analysis.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from core module module initializers[0m
+[0m[[0m[31merror[0m] [0m[0minvolving instantiated classes:[0m
+[0m[[0m[31merror[0m] [0m[0m  analysis.Analysis$[0m
+[0m[[0m[31merror[0m] [0m[0mReferring to non-existent class org.apache.spark.sql.types.StructType[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.loadData()org.apache.spark.sql.Dataset[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from static analysis.Analysis.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from core module module initializers[0m
+[0m[[0m[31merror[0m] [0m[0minvolving instantiated classes:[0m
+[0m[[0m[31merror[0m] [0m[0m  analysis.Analysis$[0m
+[0m[[0m[31merror[0m] [0m[0mReferring to non-existent method org.apache.spark.sql.types.StructType.add(java.lang.String,org.apache.spark.sql.types.DataType)org.apache.spark.sql.types.StructType[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.loadData()org.apache.spark.sql.Dataset[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from static analysis.Analysis.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from core module module initializers[0m
+[0m[[0m[31merror[0m] [0m[0minvolving instantiated classes:[0m
+[0m[[0m[31merror[0m] [0m[0m  analysis.Analysis$[0m
+[0m[[0m[31merror[0m] [0m[0mReferring to non-existent class org.apache.spark.sql.SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.loadData()org.apache.spark.sql.Dataset[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from static analysis.Analysis.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from core module module initializers[0m
+[0m[[0m[31merror[0m] [0m[0minvolving instantiated classes:[0m
+[0m[[0m[31merror[0m] [0m[0m  analysis.Analysis$[0m
+[0m[[0m[31merror[0m] [0m[0mReferring to non-existent method org.apache.spark.sql.SparkSession.sqlContext()org.apache.spark.sql.SQLContext[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.loadData()org.apache.spark.sql.Dataset[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from static analysis.Analysis.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from core module module initializers[0m
+[0m[[0m[31merror[0m] [0m[0minvolving instantiated classes:[0m
+[0m[[0m[31merror[0m] [0m[0m  analysis.Analysis$[0m
+[0m[[0m[31merror[0m] [0m[0mReferring to non-existent method org.apache.spark.sql.SparkSession.sparkContext()org.apache.spark.SparkContext[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.loadData()org.apache.spark.sql.Dataset[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from static analysis.Analysis.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from core module module initializers[0m
+[0m[[0m[31merror[0m] [0m[0minvolving instantiated classes:[0m
+[0m[[0m[31merror[0m] [0m[0m  analysis.Analysis$[0m
+[0m[[0m[31merror[0m] [0m[0mReferring to non-existent class org.apache.spark.sql.DataFrameReader[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.loadData()org.apache.spark.sql.Dataset[0m
+[0m[[0m[31merror[0m] [0m[0m  called from analysis.Analysis$.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from static analysis.Analysis.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from core module module initializers[0m
+[0m[[0m[31merror[0m] [0m[0minvolving instantiated classes:[0m
+[0m[[0m[31merror[0m] [0m[0m  analysis.Analysis$[0m
+[0m[[0m[31merror[0m] [0m[0mNot showing 18 more linking errors[0m
+[0m[[0m[0mdebug[0m] [0m[0mGlobal IR cache stats: reused: 236 -- invalidated: 2 -- trees read: 2[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[31merror[0m] [0m[0mThere were linking errors[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mfastLinkJS[0m) There were linking errors[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 4 s, completed Apr 6, 2022, 3:34:33 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m
