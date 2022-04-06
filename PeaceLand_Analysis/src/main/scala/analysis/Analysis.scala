@@ -7,6 +7,7 @@ import org.apache.spark.sql._
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.functions._
 
+
 import scala.collection.immutable._
 import plotly._
 import element._
