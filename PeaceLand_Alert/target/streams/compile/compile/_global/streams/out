@@ -1,2 +1,4 @@
-[0m[[0m[0mdebug[0m] [0m[0mAcquiring lock on file /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Alert/project/target/.sbt-compilation-infos/peaceland_alert-compile/.sbt-idea-lock ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mReleasing lock on file /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Alert/project/target/.sbt-compilation-infos/peaceland_alert-compile/.sbt-idea-lock.[0m
+[0m[[0m[31merror[0m] [0m[0m/home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Alert/src/main/scala/alert/Alert.scala:10:14: object scalajs is not a member of package scala[0m
+[0m[[0m[31merror[0m] [0m[0mimport scala.scalajs.js.annotation.JSExportTopLevel[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

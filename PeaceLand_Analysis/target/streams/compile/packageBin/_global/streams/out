@@ -1,1 +1,17 @@
-[0m[[0m[0mdebug[0m] [0m[0mJar uptodate: /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Analysis/target/scala-2.12/peaceland_analysis_2.12-1.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Analysis/target/scala-2.12/peaceland_analysis_2.12-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	analysis[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Analysis/target/scala-2.12/classes/analysis[0m
+[0m[[0m[0mdebug[0m] [0m[0m	analysis/main.js[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Analysis/target/scala-2.12/classes/analysis/main.js[0m
+[0m[[0m[0mdebug[0m] [0m[0m	analysis/Analysis$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Analysis/target/scala-2.12/classes/analysis/Analysis$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	analysis/peaceland_analysis-fastopt.html[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Analysis/target/scala-2.12/classes/analysis/peaceland_analysis-fastopt.html[0m
+[0m[[0m[0mdebug[0m] [0m[0m	analysis/Analysis.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Analysis/target/scala-2.12/classes/analysis/Analysis.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	analysis/Analysis$.sjsir[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Analysis/target/scala-2.12/classes/analysis/Analysis$.sjsir[0m
+[0m[[0m[0mdebug[0m] [0m[0m	analysis/Analysis.sjsir[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Analysis/target/scala-2.12/classes/analysis/Analysis.sjsir[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

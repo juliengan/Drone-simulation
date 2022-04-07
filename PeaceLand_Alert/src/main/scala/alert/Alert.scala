@@ -7,7 +7,7 @@ import org.apache.spark.sql.streaming._
 import plotly.Bar
 import plotly.Plotly.TraceOps
 
-import scala.scalajs.js.annotation.JSExportTopLevel
+//import scala.scalajs.js.annotation.JSExportTopLevel
 import plotly.element.{Color, Marker, Orientation}
 import plotly.layout.{BarMode, Layout}
 import org.apache.spark.SparkContext
@@ -20,21 +20,21 @@ import layout._
 import Plotly._
 import cats.Inject
 import org.apache.hadoop.yarn.webapp.view.Html
-import org.scalajs.dom
-import org.scalajs.dom.window
-import org.scalajs.dom.window.{document, window}
+//import org.scalajs.dom
+//import org.scalajs.dom.window
+//import org.scalajs.dom.window.{document, window}
 
 import java.io._
 import java.io.File
-import scala.scalajs.js.annotation.JSExportTopLevel
+//import scala.scalajs.js.annotation.JSExportTopLevel
 
 object Alert {
 
-    def appendPar(targetNode: dom.Node, text: String): Unit = {
+    /*def appendPar(targetNode: dom.Node, text: String): Unit = {
         val parNode = dom.document.createElement("p")
         parNode.textContent = text
         targetNode.appendChild(parNode)
-    }
+    }*/
 
     /**
      * It streams the citizen report from drone to the analysis job
@@ -42,12 +42,13 @@ object Alert {
      * @param args
      */
     def main(args: Array[String]): Unit = {
-
-            document.addEventListener("DOMContentLoaded", { (e: dom.Event) =>
+        loadCitizenLowPscore()
+            /*document.addEventListener("DOMContentLoaded", { (e: dom.Event) =>
             setupUI()
-        })    }
+        }) */
+    }
 
-    @JSExportTopLevel("addClickedMessage")
+    /*@JSExportTopLevel("addClickedMessage")
     def addClickedMessage(): Unit = {
         appendPar(document.body, "You clicked the button!")
     }
@@ -61,10 +62,9 @@ object Alert {
         dom.document.body.appendChild(button)
 
         appendPar(dom.document.body, "Hello World")
-    }
+    }*/
 
-    def retrieveAlerts(): Unit ={
-        // Creates spark session using hdfs cluster
+    def loadCitizenLowPscore(): Unit ={
         val spark = SparkSession
           .builder
           .config("spark.master", "local")
@@ -107,6 +107,33 @@ object Alert {
           .trigger(Trigger.ProcessingTime("25 seconds"))
           .start()
           .awaitTermination()
+
+        suspiscious
+    }
+
+    def retrieveAlerts(): Unit ={
+        // Creates spark session using hdfs cluster
+        val spark = SparkSession
+          .builder
+          .config("spark.master", "local")
+          .getOrCreate()
+
+        spark.sparkContext.setLogLevel("ERROR")
+
+        import spark.implicits._
+
+        // Creates a schema for citizenReport
+        val schema = new StructType()
+          .add("id", StringType)
+          .add("name", StringType)
+          .add("age", StringType)
+          .add("emotion", StringType)
+          .add("behavior", StringType)
+          .add("pscore", IntegerType)
+          .add("datetime", StringType)
+          .add("lat", StringType)
+          .add("lon", StringType)
+          .add("words", StringType)
 
         // citizens with too low peace score (under 5/20)
         val angry = spark.readStream

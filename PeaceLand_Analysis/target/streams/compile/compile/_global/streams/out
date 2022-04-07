@@ -1,2 +1,7 @@
-[0m[[0m[0mdebug[0m] [0m[0mAcquiring lock on file /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Analysis/project/target/.sbt-compilation-infos/peaceland_analysis-compile/.sbt-idea-lock ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mReleasing lock on file /home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Analysis/project/target/.sbt-compilation-infos/peaceland_analysis-compile/.sbt-idea-lock.[0m
+[0m[[0m[31merror[0m] [0m[0m/home/julie/Desktop/Data_Engineering_EKANE_NGAN_NZEKET/PeaceLand_Analysis/src/main/scala/analysis/Analysis.scala:133:168: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
+[0m[[0m[31merror[0m] [0m[0m required: org.apache.spark.sql.DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m    (which expands to)  org.apache.spark.sql.Dataset[org.apache.spark.sql.Row][0m
+[0m[[0m[31merror[0m] [0m[0m        df.filter(df("emotion") === "angry" || df("emotion") === "afraid" || df("emotion") === "alarmed" || df("emotion") === "depressed").groupBy("name").count().show()[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

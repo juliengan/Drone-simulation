@@ -30,7 +30,9 @@ object Analysis {
      */
     def main(args: Array[String]): Unit = {
         val df = loadData()
-        df.show()
+        //df.show()
+        emotionByMostCommon(df)
+
         //htmlUpdate()
         // show the schema of the dataframe
         //df.printSchema()
@@ -110,26 +112,26 @@ object Analysis {
         df.count()
     }
 
-    def emotionByMostCommon(df : DataFrame): DataFrame ={
+    def emotionByMostCommon(df : DataFrame): Unit ={
         print("\n \n ************* Classification par emotion ************* \n \n")
-        df.groupBy("emotion").count()
+        df.groupBy("emotion").count().show()
     }
 
-    def namesByEmotion(df : DataFrame): DataFrame ={
+    def namesByEmotion(df : DataFrame): Unit ={
         print("\n \n ************* Noms par emotion ************* \n \n")
-        df.groupBy("emotion").agg(collect_list("name").alias("names"))
+        df.groupBy("emotion").agg(collect_list("name").alias("names")).show()
     }
 
-    def wordsNameByEmotion(df : DataFrame): DataFrame ={
-        df.groupBy("emotion").agg(collect_list("words").alias("words"))
+    def wordsNameByEmotion(df : DataFrame): Unit ={
+        df.groupBy("emotion").agg(collect_list("words").alias("words")).show()
     }
 
-    def wordsOfCitizen(df : DataFrame): DataFrame ={
-        df.groupBy("name").agg(collect_list("words").alias("words"))
+    def wordsOfCitizen(df : DataFrame): Unit ={
+        df.groupBy("name").agg(collect_list("words").alias("words")).show()
     }
 
-    def nbSadCitizens(df : DataFrame): DataFrame ={
-        df.filter(df("emotion") === "angry" || df("emotion") === "afraid" || df("emotion") === "alarmed" || df("emotion") === "depressed").groupBy("name").count()
+    def nbSadCitizens(df : DataFrame): Unit ={
+        df.filter(df("emotion") === "angry" || df("emotion") === "afraid" || df("emotion") === "alarmed" || df("emotion") === "depressed").groupBy("name").count().show()
     }
 
     // show names of people who are happy
